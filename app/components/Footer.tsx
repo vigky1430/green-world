@@ -1,106 +1,53 @@
 import Link from 'next/link';
 
-const footerLinks = {
-  'Quick Links': [
-    { label: 'Home',          href: '/'             },
-    { label: 'About Us',      href: '/about-us'     },
-    { label: 'Services',      href: '/services'     },
-    { label: 'Projects',      href: '/projects'     },
-    { label: 'Testimonials',  href: '/testimonials' },
-    { label: 'Contact Us',    href: '/contact-us'   },
-  ],
-  'Services': [
-    { label: 'Lawn Care',          href: '/services' },
-    { label: 'Garden Design',      href: '/services' },
-    { label: 'Tree Surgery',       href: '/services' },
-    { label: 'Irrigation Systems', href: '/services' },
-    { label: 'Seasonal Planting',  href: '/services' },
-  ],
-  'Contact': [
-    { label: '📍 123 Green Lane, Eco City',  href: '#' },
-    { label: '📞 +1 (800) 473-3696',         href: 'tel:+18004733696' },
-    { label: '✉️ hello@greenworld.com',       href: 'mailto:hello@greenworld.com' },
-    { label: '🕒 Mon–Sat 8am – 6pm',         href: '#' },
-  ],
-};
-
 export default function Footer() {
   return (
-    <footer style={{ background: 'var(--gw-dark)', color: 'rgba(255,255,255,0.75)', fontFamily: 'var(--font-sans)' }}>
-      {/* Main footer */}
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '4rem 1.5rem 3rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '3rem' }}>
-        {/* Brand column */}
+    <footer className="bg-[#fcfdf6] dark:bg-neutral-950 border-t border-neutral-200 dark:border-neutral-800 mt-auto">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 py-12 max-w-7xl mx-auto">
+        <div className="space-y-6">
+          <div className="text-xl font-black text-[#2e7d32] dark:text-[#66bb6a] font-headline">
+            <img alt="Green World Landscaping Logo" className="h-12 w-auto object-contain" src="/logo.svg" />
+          </div>
+          <p className="text-neutral-500 dark:text-neutral-400 font-body">Premium landscaping services dedicated to sustainable beauty and architectural excellence.</p>
+          <div className="flex gap-4">
+            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">
+              <span className="material-symbols-outlined">public</span>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">
+              <span className="material-symbols-outlined">mail</span>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">
+              <span className="material-symbols-outlined">phone_in_talk</span>
+            </div>
+          </div>
+        </div>
         <div>
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', textDecoration: 'none', marginBottom: '1.25rem' }}>
-            <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg,#2da32d,#196519)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', flexShrink: 0 }}>🌿</div>
-            <span style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: '1.375rem', fontWeight: 700, color: '#fff' }}>
-              Green<span style={{ color: '#86d886' }}>World</span>
-            </span>
-          </Link>
-          <p style={{ fontSize: '0.9375rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-            Transforming outdoor spaces into breathtaking landscapes since 2005. Rooted in nature, driven by passion.
-          </p>
-          {/* Socials */}
-          <div style={{ display: 'flex', gap: '0.75rem' }}>
-            {[
-              { icon: '𝕏', label: 'Twitter',   href: '#', id: 'footer-twitter'   },
-              { icon: 'in', label: 'LinkedIn',  href: '#', id: 'footer-linkedin'  },
-              { icon: 'f',  label: 'Facebook',  href: '#', id: 'footer-facebook'  },
-              { icon: '📷', label: 'Instagram', href: '#', id: 'footer-instagram' },
-            ].map((s) => (
-              <a
-                key={s.id}
-                id={s.id}
-                href={s.href}
-                aria-label={s.label}
-                style={{
-                  width: '38px', height: '38px',
-                  borderRadius: '9999px',
-                  background: 'rgba(255,255,255,0.07)',
-                  border: '1px solid rgba(255,255,255,0.12)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: '#fff', fontSize: '0.85rem', fontWeight: 700,
-                  textDecoration: 'none', transition: 'all 0.25s ease',
-                }}
-              >
-                {s.icon}
-              </a>
-            ))}
-          </div>
+          <h4 className="font-bold text-primary mb-6">Services</h4>
+          <ul className="space-y-4">
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Residential Design</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Commercial Care</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Smart Irrigation</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Tree Surgery</Link></li>
+          </ul>
         </div>
-
-        {/* Link columns */}
-        {Object.entries(footerLinks).map(([title, links]) => (
-          <div key={title}>
-            <h3 style={{ color: '#fff', fontWeight: 600, fontSize: '1rem', marginBottom: '1rem', letterSpacing: '0.02em' }}>{title}</h3>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
-              {links.map((link, i) => (
-                <li key={i}>
-                  <Link
-                    href={link.href}
-                    style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none', fontSize: '0.9375rem', transition: 'color 0.2s ease' }}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+        <div>
+          <h4 className="font-bold text-primary mb-6">Quick Links</h4>
+          <ul className="space-y-4">
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/about-us">Careers</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/about-us">Sustainability</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/testimonials">Testimonials</Link></li>
+          </ul>
+        </div>
+        <div className="space-y-6">
+          <h4 className="font-bold text-primary mb-6">Our Location</h4>
+          <div className="rounded-xl overflow-hidden h-32 border border-outline-variant">
+            <img className="w-full h-full object-cover" data-alt="map view showing local city streets and park areas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO6b6gWsb5ryl9o-egBLmFRkUtuY3AI0ZTKJ0xPRc5mn0zKNue5aoSAx3T_9du6ogI4r18WjE2EYqiMaU_xwggqcqe9BsgR1IoAm4vXilv6u3JWJcYy_SZhpd02PF0XNfW78zYO9pedX8wcXV8IiYnwnShoosQYlKCKB34IdJ_3M-cxUCSZDLvwrQH7BZTAaJcYXMYey_A8Wxqonl4_QMYOr19amq5BvKYQ_uXKpqbe6tBIA3K-Uqx9kIz9JJfr4cgCNiHi3qx_gg" />
           </div>
-        ))}
+          <p className="text-neutral-500 dark:text-neutral-400 text-sm">123 Green Way, Eco City, OR 97201</p>
+        </div>
       </div>
-
-      {/* Divider */}
-      <div style={{ borderTop: '1px solid rgba(255,255,255,0.07)', maxWidth: '1280px', margin: '0 auto', padding: '1.5rem', display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'space-between' }}>
-        <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.45)' }}>
-          © {new Date().getFullYear()} GreenWorld Landscaping. All rights reserved.
-        </p>
-        <div style={{ display: 'flex', gap: '1.5rem' }}>
-          {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((item) => (
-            <a key={item} href="#" style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', transition: 'color 0.2s ease' }}>
-              {item}
-            </a>
-          ))}
-        </div>
+      <div className="max-w-7xl mx-auto px-8 py-8 border-t border-neutral-200 dark:border-neutral-800 text-center md:text-left">
+        <p className="text-neutral-500 dark:text-neutral-400 text-sm">© 2024 Green World Landscaping. All rights reserved.</p>
       </div>
     </footer>
   );

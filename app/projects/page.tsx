@@ -2,201 +2,149 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Browse GreenWorld's portfolio of completed landscaping projects — garden transformations, patios, planting schemes and more.",
+  title: "Our Portfolio of Living Masterpieces | Green World Landscaping",
+  description: "Explore our collection of architectural landscapes where organic fluidity meets structural precision.",
 };
-
-const projects = [
-  {
-    id:       "highland-estate",
-    title:    "Highland Estate Gardens",
-    category: "Garden Design",
-    location: "Highlands, Scotland",
-    area:     "12 acres",
-    duration: "8 months",
-    emoji:    "🏡",
-    gradient: "linear-gradient(135deg,#2da32d,#86d886)",
-    desc:     "Complete landscape redesign for a 12-acre Highland estate including formal parterre garden, wildflower meadow and ornamental lake.",
-  },
-  {
-    id:       "urban-terrace",
-    title:    "Modern Urban Terrace",
-    category: "Hard Landscaping",
-    location: "Edinburgh, Scotland",
-    area:     "120 m²",
-    duration: "6 weeks",
-    emoji:    "🌆",
-    gradient: "linear-gradient(135deg,#196519,#4cbf4c)",
-    desc:     "Striking roof terrace transformation with porcelain paving, raised planters, pergola and smart irrigation for a city centre penthouse.",
-  },
-  {
-    id:       "country-cottage",
-    title:    "Country Cottage Garden",
-    category: "Planting Design",
-    location: "Cotswolds, England",
-    area:     "0.5 acres",
-    duration: "4 months",
-    emoji:    "🌸",
-    gradient: "linear-gradient(135deg,#c49a52,#e5d4b0)",
-    desc:     "Romantic cottage garden with traditional herbaceous borders, rose arches and a productive kitchen garden.",
-  },
-  {
-    id:       "corporate-grounds",
-    title:    "Corporate Campus Grounds",
-    category: "Commercial Landscaping",
-    location: "Glasgow, Scotland",
-    area:     "3 acres",
-    duration: "5 months",
-    emoji:    "🏢",
-    gradient: "linear-gradient(135deg,#155015,#2da32d)",
-    desc:     "Year-round grounds maintenance and seasonal planting for a 3-acre corporate campus with 500+ daily visitors.",
-  },
-  {
-    id:       "coastal-garden",
-    title:    "Coastal Wind-Break Garden",
-    category: "Tree Surgery & Planting",
-    location: "St Andrews, Scotland",
-    area:     "1.2 acres",
-    duration: "10 weeks",
-    emoji:    "🌊",
-    gradient: "linear-gradient(135deg,#196519,#b8ebb8)",
-    desc:     "Salt-tolerant planting design with strategic windbreaks and native coastal species to create a sheltered seaside garden.",
-  },
-  {
-    id:       "kitchen-garden",
-    title:    "Walled Kitchen Garden",
-    category: "Garden Design & Build",
-    location: "Perthshire, Scotland",
-    area:     "0.75 acres",
-    duration: "6 months",
-    emoji:    "🥕",
-    gradient: "linear-gradient(135deg,#946427,#e5d4b0)",
-    desc:     "Full restoration of a Victorian walled kitchen garden with raised beds, glasshouse renovation and orchard replanting.",
-  },
-];
-
-const categories = ["All", "Garden Design", "Hard Landscaping", "Planting Design", "Commercial Landscaping", "Tree Surgery & Planting", "Garden Design & Build"];
 
 export default function ProjectsPage() {
   return (
     <>
-      {/* ─── BANNER ──────────────────────────────────── */}
-      <section id="projects-banner" className="page-banner">
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", textAlign: "center", position: "relative", zIndex: 1 }}>
-          <div className="section-tag animate-fadeInUp" style={{ justifyContent: "center", marginBottom: "1rem" }}>Our Portfolio</div>
-          <h1 className="font-serif animate-fadeInUp delay-100" style={{ fontSize: "clamp(2rem,5vw,3.75rem)", fontWeight: 800, color: "#fff", lineHeight: 1.15 }}>
-            Projects We&apos;re<br />
-            <span className="gw-gradient-text">Proud Of</span>
-          </h1>
-          <p className="animate-fadeInUp delay-200" style={{ color: "rgba(255,255,255,0.7)", fontSize: "1.0625rem", marginTop: "1rem", maxWidth: "520px", margin: "1rem auto 0" }}>
-            Every project is a unique story. Browse a selection of our favourite transformations.
-          </p>
-        </div>
-      </section>
-
-      {/* ─── FILTER TABS ─────────────────────────────── */}
-      <section style={{ padding: "2.5rem 0 0", background: "#f8fcf8" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem" }}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "0.625rem" }}>
-            {categories.map((cat, i) => (
-              <button
-                key={cat}
-                id={`filter-${cat.toLowerCase().replace(/\s/g, "-")}`}
-                style={{
-                  padding: "0.5rem 1.125rem",
-                  borderRadius: "9999px",
-                  border: "1.5px solid",
-                  borderColor: i === 0 ? "var(--gw-green-500)" : "#d1e8d1",
-                  background: i === 0 ? "var(--gw-green-500)" : "#fff",
-                  color: i === 0 ? "#fff" : "#4a6b4a",
-                  fontSize: "0.875rem", fontWeight: 600, cursor: "pointer",
-                  transition: "all 0.25s ease",
-                }}
-              >
-                {cat}
-              </button>
-            ))}
+      {/* Hero Section */}
+      <section className="px-8 mb-24 max-w-screen-2xl mx-auto pt-8">
+        <div className="flex flex-col md:flex-row gap-16 items-start">
+          <div className="w-full md:w-1/2 pt-12 md:pt-24">
+            <h1 className="font-headline text-[2.5rem] md:text-[3.5rem] leading-tight tracking-[-0.02em] font-extrabold text-on-surface mb-6">
+              Our Portfolio of<br />
+              <span className="text-gradient">Living Masterpieces</span>
+            </h1>
+            <p className="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed mb-10">
+              We don't just plant; we sculpt space. Explore our collection of architectural landscapes where organic fluidity meets structural precision, creating enduring environments.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 relative">
+            <div className="aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low relative">
+              <img alt="Architectural garden with precise stone pathways and lush structural planting" className="object-cover w-full h-full p-1 rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ0W475DRESrxl6ArokrX9VspOZGywkBViWeUmWIQJGbAFepDRYqmNvEHMOADwEY0rR85G2S2mi8-IF8BL0pxb5KQrmGvweu45Mtzt-s742EbQxR8Jb5RgFlt_ehC0UwKVG8R6He8WbYigcXXf69PQK09LTu8ESdNvCIeKxdiQjCSp0tFDrDGneBAPVv90VnaO7lc3rQAdDp1QAY5SzSxH2MyTxc97WES2Ta9jFhIA8yUkRkrVWET-2jkpp_AZtVvGE6Iuac_rgIU" />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ─── PROJECTS GRID ───────────────────────────── */}
-      <section id="projects-grid" style={{ padding: "3rem 0 6rem", background: "#f8fcf8" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: "1.75rem" }}>
-            {projects.map((proj, i) => (
-              <article
-                key={proj.id}
-                id={`project-${proj.id}`}
-                className={`animate-fadeInUp delay-${(i % 3 + 1) * 100}`}
-                style={{
-                  background: "#fff", border: "1px solid #e8f5e8",
-                  borderRadius: "1.5rem", overflow: "hidden",
-                  transition: "all 0.35s ease", cursor: "pointer",
-                }}
-              >
-                {/* Visual hero */}
-                <div style={{
-                  height: "220px", background: proj.gradient,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: "5rem", position: "relative",
-                }}>
-                  {proj.emoji}
-                  <span style={{
-                    position: "absolute", top: "1rem", right: "1rem",
-                    background: "rgba(255,255,255,0.2)", backdropFilter: "blur(8px)",
-                    border: "1px solid rgba(255,255,255,0.3)",
-                    color: "#fff", fontSize: "0.75rem", fontWeight: 700,
-                    padding: "0.3rem 0.75rem", borderRadius: "9999px", letterSpacing: "0.06em",
-                  }}>
-                    {proj.category.toUpperCase()}
-                  </span>
-                </div>
+      {/* Categories/Filters */}
+      <section className="px-8 mb-16 max-w-screen-2xl mx-auto">
+        <div className="flex flex-wrap gap-4 border-b border-surface-variant pb-4">
+          <button className="font-label text-xs uppercase tracking-[0.05em] px-4 py-2 font-bold text-primary border-b-2 border-primary -mb-[17px]">All Projects</button>
+          <button className="font-label text-xs uppercase tracking-[0.05em] px-4 py-2 text-on-surface-variant hover:text-primary transition-colors">Residential</button>
+          <button className="font-label text-xs uppercase tracking-[0.05em] px-4 py-2 text-on-surface-variant hover:text-primary transition-colors">Commercial</button>
+          <button className="font-label text-xs uppercase tracking-[0.05em] px-4 py-2 text-on-surface-variant hover:text-primary transition-colors">Green Walls</button>
+          <button className="font-label text-xs uppercase tracking-[0.05em] px-4 py-2 text-on-surface-variant hover:text-primary transition-colors">Maintenance</button>
+        </div>
+      </section>
 
-                {/* Content */}
-                <div style={{ padding: "1.75rem" }}>
-                  <h2 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--gw-dark)", marginBottom: "0.5rem" }}>{proj.title}</h2>
-                  <p style={{ fontSize: "0.9375rem", color: "#4a6b4a", lineHeight: 1.65, marginBottom: "1.25rem" }}>{proj.desc}</p>
+      {/* Gallery Grid */}
+      <section className="px-8 mb-32 max-w-screen-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+          
+          {/* Project 1 (Large) */}
+          <article className="col-span-1 lg:col-span-7 bg-surface-container-lowest rounded-xl toned-shadow flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+            <div className="aspect-video w-full p-1 relative overflow-hidden rounded-t-xl">
+              <img alt="Marina Bay Penthouse terrace with minimalist stone and structural plants" className="object-cover w-full h-full rounded-lg transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsHkN3eGk33ruFuoway9UwYh_5b0LLuArohy7kbTVQBop935qvvzCHdtHCIVlZGwyz749Wlb9mwLFYPLeQs_gvdqHh72m_H6-tZOo1aexnok9C5hivR5tzmY_EN1J0hKZaTxjXKXMrj5xY5nxeIyGkb10maqneOxbSkD5ykPp5B_e8EfcdC58mor6y2M7J37BHbVXbOc9MBV2SYJcogeJMjSM7QFjXSOvri4cPBgBBlgZrz-p_YDPyr9q9sKrIYGhlP5wwKYYWh3w" />
+            </div>
+            <div className="p-8 flex flex-col justify-between flex-grow">
+              <div>
+                <div className="font-label text-xs uppercase tracking-[0.05em] text-outline mb-2">Residential • Full Scope</div>
+                <h3 className="font-headline text-[1.75rem] font-bold text-on-surface mb-2">Marina Bay Penthouse</h3>
+                <p className="font-body text-on-surface-variant mb-6">A high-altitude sanctuary blending sleek stone surfaces with resilient, structural flora to withstand urban elements while providing a serene retreat.</p>
+              </div>
+              <div className="flex items-center text-primary font-medium text-sm">
+                View Case Study <span className="material-symbols-outlined ml-2 text-lg" style={{ fontVariationSettings: '"FILL" 0' }}>arrow_forward</span>
+              </div>
+            </div>
+          </article>
 
-                  {/* Meta chips */}
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "1.5rem" }}>
-                    {[
-                      { icon: "📍", label: proj.location },
-                      { icon: "📐", label: proj.area },
-                      { icon: "📅", label: proj.duration },
-                    ].map((m) => (
-                      <span key={m.label} style={{
-                        display: "flex", alignItems: "center", gap: "0.375rem",
-                        background: "#f0faf0", border: "1px solid #dcf5dc",
-                        color: "var(--gw-green-700)", fontSize: "0.8125rem",
-                        padding: "0.3rem 0.75rem", borderRadius: "9999px",
-                      }}>
-                        {m.icon} {m.label}
-                      </span>
-                    ))}
-                  </div>
+          {/* Project 2 (Small) */}
+          <article className="col-span-1 lg:col-span-5 bg-surface-container-lowest rounded-xl toned-shadow flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+            <div className="aspect-[4/3] w-full p-1 relative overflow-hidden rounded-t-xl">
+              <img alt="Corporate campus courtyard with geometric water feature" className="object-cover w-full h-full rounded-lg transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPvTrNQ81wFG52LunCHnNn5G45oEWQWAxfKh9atNM5WGvMatzahpA30fVzeLAH2xKOtFyxLHjTm_nxSijI6WcJYSTI6No17-Pgzl9t71qa7sxxi39Sm5a7BuNv99nUn57gUW3oRV4W8CvSginQ76Yn0kZZRenXs8MM73zFk-5yTi_Xl8d_cuxH08hG4mmVltrxsjV1Dg8YWMScFw4PNrodZJ1oz-H_rXqWg5TneXGO_ucwJV3NxfiM798Kq8g6mbDvinDNAItsmow" />
+            </div>
+            <div className="p-6 flex flex-col justify-between flex-grow">
+              <div>
+                <div className="font-label text-xs uppercase tracking-[0.05em] text-outline mb-2">Commercial • Water Feature</div>
+                <h3 className="font-headline text-xl font-bold text-on-surface mb-2">Apex Tech Campus</h3>
+                <p className="font-body text-sm text-on-surface-variant mb-4">A reflective courtyard designed to foster focus and calm amidst a bustling corporate environment.</p>
+              </div>
+              <div className="flex items-center text-primary font-medium text-sm">
+                View Case Study <span className="material-symbols-outlined ml-2 text-lg" style={{ fontVariationSettings: '"FILL" 0' }}>arrow_forward</span>
+              </div>
+            </div>
+          </article>
 
-                  <Link href="/contact-us" id={`project-cta-${proj.id}`} className="btn-primary" style={{ fontSize: "0.875rem", padding: "0.625rem 1.25rem" }}>
-                    Start a Similar Project →
-                  </Link>
-                </div>
-              </article>
-            ))}
+          {/* Project 3 (Small) */}
+          <article className="col-span-1 lg:col-span-5 bg-surface-container-lowest rounded-xl toned-shadow flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+            <div className="aspect-[4/3] w-full p-1 relative overflow-hidden rounded-t-xl">
+              <img alt="Massive indoor green wall in a lobby" className="object-cover w-full h-full rounded-lg transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgph6UkkcfN9rU_vYTeRtGpKohjHXqVRSVmAdp2eFlAGnrP_k5NuOIPHtLYzfDQscbZav-MJDpCBHXqql4oKmw3iaBdrv6Uv6hElE-LZ3sl7Vkx6Ch2sLHdyeqMKO1NEPYBel7jCps7c4tH8iBVPEF70fHyE-hEa_KM9aWFzaxi-XBoMzO4F25BR5zIsFUCvyQ0l1Al_ViBdiYESiFDjwOin8sHWn5OlyVhtA-Z2Bfk6P3trv4rB6dy5IBs2dEKS9E2KA-Tx7Vc8A" />
+            </div>
+            <div className="p-6 flex flex-col justify-between flex-grow">
+              <div>
+                <div className="font-label text-xs uppercase tracking-[0.05em] text-outline mb-2">Green Walls • Installation</div>
+                <h3 className="font-headline text-xl font-bold text-on-surface mb-2">The Verdant Atrium</h3>
+                <p className="font-body text-sm text-on-surface-variant mb-4">A three-story living wall that acts as the biological lungs for a premier downtown commercial tower.</p>
+              </div>
+              <div className="flex items-center text-primary font-medium text-sm">
+                View Case Study <span className="material-symbols-outlined ml-2 text-lg" style={{ fontVariationSettings: '"FILL" 0' }}>arrow_forward</span>
+              </div>
+            </div>
+          </article>
+
+          {/* Project 4 (Large) */}
+          <article className="col-span-1 lg:col-span-7 bg-surface-container-lowest rounded-xl toned-shadow flex flex-col group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+            <div className="aspect-video w-full p-1 relative overflow-hidden rounded-t-xl">
+              <img alt="Minimalist residential backyard with concrete walls and native grasses" className="object-cover w-full h-full rounded-lg transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkW19pTePcyUS8RCygUMqqs-L_DYlfCCXskgfNuMGgpIOj73euoqLVZ0-ni7KPPtW_WhhAWukgCyQI9tl0t5l_HgYaAG--aly_KbHDHQh6DrYPHzGrK3ZQBgEmnzXZ9FH8zkqCJ9cR6mIWsrNusggyL4uubhwQ_G0E-CGsmyP-r2dzN5zjTdHZaGUsXcvoU9eGPkwKozvZsHl2DJnZkZOKqG4uYAq4ALk8b0LPKr41_j5l2dm599bq6XjdktpwTr3j0CwnQb1c300" />
+            </div>
+            <div className="p-8 flex flex-col justify-between flex-grow">
+              <div>
+                <div className="font-label text-xs uppercase tracking-[0.05em] text-outline mb-2">Residential • Desert Modern</div>
+                <h3 className="font-headline text-[1.75rem] font-bold text-on-surface mb-2">Echo Canyon Retreat</h3>
+                <p className="font-body text-on-surface-variant mb-6">Embracing the arid climate with a zero-water design that utilizes native structural succulents and architectural concrete forms.</p>
+              </div>
+              <div className="flex items-center text-primary font-medium text-sm">
+                View Case Study <span className="material-symbols-outlined ml-2 text-lg" style={{ fontVariationSettings: '"FILL" 0' }}>arrow_forward</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      {/* Before & After Transformation */}
+      <section className="bg-surface-container-low py-24 mb-32">
+        <div className="max-w-screen-2xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-headline text-[1.75rem] font-bold text-on-surface mb-4">Structural Transformation</h2>
+            <p className="font-body text-on-surface-variant max-w-2xl mx-auto">Witness the precision of our process. From raw earth to architectural refinement.</p>
+          </div>
+          <div className="bg-surface-container-lowest rounded-xl p-1 toned-shadow relative">
+            <div className="flex flex-col lg:flex-row h-full">
+              <div className="w-full lg:w-1/2 aspect-video lg:aspect-auto relative group overflow-hidden rounded-tl-lg rounded-bl-lg lg:rounded-bl-none">
+                <img alt="Overgrown, unstructured backyard space" className="object-cover w-full h-full grayscale-[50%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrTpRjea78EzrqrY4V15MwJN4oP0ipf8ny629E2s8aD55Snv6DtJltw6dkpLqQ-_A4juznHrudaZO0YmmRuO6K3ErTEMzfI8EicSQWQrz0Krh7fHLiTNz8OIkXI3xppwG4PXRX6Rmx63DgAA30YlNLcUH9wChv16KHjt5TAVgpqKl6j_TjsWInpOwzxMxzUasDDUJHZLXn8nLajPeQnWzyfnRdiybnhd5R6Ck6jdw8iXcYRUFQMECg0e_acx-PHXqal4fEi1lIqxI" />
+                <div className="absolute top-4 left-4 glass-panel px-3 py-1 rounded-sm font-label text-xs font-bold uppercase text-on-surface">Before</div>
+              </div>
+              <div className="w-full lg:w-1/2 aspect-video lg:aspect-auto relative overflow-hidden rounded-tr-lg rounded-br-lg lg:rounded-tr-none">
+                <img alt="Transformed precise modern garden with stone steps" className="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwgZVe49ZFTganrUTimqIPzORHnFzbZT14XxaJ47flQ68XUJX5uSNoqj_hN9vZ8fMdQoRqRlX64e5634fRzTwvaLGkQvFPsKb2xRJsB6qgi68uSPXC-9Ktt7WOluCOHYzt7ytCMv0PFb2qxunkT2QVQKAn7izMPD9sVcQImNhWm0uVF3OyOKXupyMs5znTxWwc-WTHJiXuN_DqJxF4ONc7sfzYD7QBB9zdX1IK8e3x3cjk0QTQ0Ai4IThEGOI4IR3UC7GGmbQGmss" />
+                <div className="absolute top-4 right-4 glass-panel px-3 py-1 rounded-sm font-label text-xs font-bold uppercase text-primary">After</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ─── CTA ─────────────────────────────────────── */}
-      <section id="projects-cta" style={{ padding: "5rem 0", background: "linear-gradient(135deg,#1f831f,#155015)", textAlign: "center" }}>
-        <div style={{ maxWidth: "640px", margin: "0 auto", padding: "0 1.5rem" }}>
-          <h2 className="font-serif" style={{ fontSize: "clamp(1.75rem,4vw,2.75rem)", fontWeight: 700, color: "#fff", marginBottom: "1rem" }}>
-            Have a Project in Mind?
-          </h2>
-          <p style={{ color: "rgba(255,255,255,0.78)", fontSize: "1.0625rem", marginBottom: "2rem" }}>
-            Tell us your vision and we&apos;ll bring it to life. Every great garden starts with a conversation.
-          </p>
-          <Link href="/contact-us" id="projects-contact-btn" className="btn-outline">Get in Touch →</Link>
-        </div>
+      {/* CTA Section */}
+      <section className="px-8 max-w-3xl mx-auto text-center mb-16">
+        <h2 className="font-headline text-[2.5rem] font-bold text-on-surface mb-6">Have a Vision? Let's Build It.</h2>
+        <p className="font-body text-lg text-on-surface-variant mb-10">Schedule a consultation to discuss the structural and botanical requirements of your next project.</p>
+        <Link href="/contact-us" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-on-primary gradient-primary rounded-md shadow-md hover:shadow-lg transition-all scale-100 hover:scale-[1.02]">
+          Start the Process
+          <span className="material-symbols-outlined ml-2" style={{ fontVariationSettings: '"FILL" 0' }}>arrow_forward</span>
+        </Link>
       </section>
     </>
   );

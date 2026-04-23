@@ -2,215 +2,178 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Home",
-  description:
-    "GreenWorld Landscaping – premium lawn care, garden design, and outdoor transformations. Get your free quote today.",
+  title: "Green World Landscaping | Transform Your Vision",
+  description: "Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert design, meticulous maintenance, and organic care for your environment.",
 };
-
-const services = [
-  { icon: "🌱", title: "Lawn Care",          desc: "Expert mowing, fertilising, aerating and weed control to keep your lawn lush and healthy year-round." },
-  { icon: "🌺", title: "Garden Design",      desc: "Bespoke planting plans and hard-landscaping layouts crafted by award-winning designers." },
-  { icon: "🌳", title: "Tree Surgery",       desc: "Safe, professional pruning, crown reduction and removal by fully-certified arborists." },
-  { icon: "💧", title: "Irrigation Systems", desc: "Smart, water-efficient drip and sprinkler systems installed and maintained for your garden." },
-  { icon: "🍂", title: "Seasonal Planting",  desc: "Year-round colour with seasonal bulbs, bedding and border plants chosen for your soil and aspect." },
-  { icon: "🧱", title: "Hard Landscaping",   desc: "Patios, paths, raised beds, pergolas and fencing built to last from premium materials." },
-];
-
-const stats = [
-  { value: "18+",   label: "Years Experience" },
-  { value: "3,500+", label: "Projects Completed" },
-  { value: "97%",   label: "Client Satisfaction" },
-  { value: "85+",   label: "Expert Team Members" },
-];
 
 export default function HomePage() {
   return (
     <>
-      {/* ─── HERO ──────────────────────────────────────── */}
-      <section
-        id="hero"
-        style={{
-          minHeight: "100vh",
-          background: "linear-gradient(160deg,#0d1a0d 0%,#142014 40%,#1c2e1c 100%)",
-          display: "flex",
-          alignItems: "center",
-          position: "relative",
-          overflow: "hidden",
-          paddingTop: "76px",
-        }}
-      >
-        {/* Decorative rings */}
-        {[400, 700, 1000].map((size, i) => (
-          <div
-            key={i}
-            className="hero-ring"
-            style={{
-              width: size, height: size,
-              top: "50%", left: "50%",
-              transform: "translate(-50%,-50%)",
-              opacity: 0.4 - i * 0.1,
-            }}
-          />
-        ))}
-
-        {/* Glowing orb */}
-        <div style={{
-          position: "absolute", top: "20%", right: "10%",
-          width: "500px", height: "500px", borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(45,163,45,0.15) 0%, transparent 70%)",
-          filter: "blur(40px)",
-          pointerEvents: "none",
-        }} />
-
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "4rem 1.5rem", position: "relative", zIndex: 1, width: "100%" }}>
-          <div style={{ maxWidth: "680px" }}>
-            <div className="section-tag animate-fadeInUp" style={{ marginBottom: "1.5rem" }}>
-              <span>🌿</span> Award-winning Landscaping
+      {/* Hero Section */}
+      <section className="relative min-h-[870px] flex items-center overflow-hidden bg-surface-container-low">
+        <div className="absolute inset-0 z-0">
+          <img className="w-full h-full object-cover opacity-20" alt="lush sprawling garden with manicured lawn, architectural shrubs, and soft morning sunlight filtering through oak trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_hHhMWT91fxOMG1u1ZODUxV8BdmnJdbxiChYpYgdsR_ABRzX6RWzgwPNzoy4NcANv-a7Eqpl4yWrtQU3GDCEhxqUP5GN1zPZfQt8yQnrpBqPSLPgZuJ28qiL428pEALpXjSKumsuCToZ7cRS1_VnW549_vwBkvFmIUIAEu_NmMCXyBMrfnFILjEZIl2MCusXxhooWV_XvNdU-4nXr4ulzWrgRoSlwsqUmiVOeqZoxsmg_d-PMy3tACBkDd_8Ip_Zw2zewF7aHNpk" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-8 py-20 w-full grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-sm font-semibold uppercase tracking-wider">
+              <span className="material-symbols-outlined !text-sm" style={{ fontVariationSettings: '"FILL" 1' }}>eco</span>
+              Premium Landscaping Services
             </div>
-
-            <h1
-              className="font-serif animate-fadeInUp delay-100"
-              style={{ fontSize: "clamp(2.5rem,6vw,4.5rem)", fontWeight: 800, color: "#fff", lineHeight: 1.1, marginBottom: "1.5rem" }}
-            >
-              We Shape Nature<br />
-              <span className="gw-gradient-text">Into Beauty</span>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
+              We Make Greenery For Your Vision
             </h1>
-
-            <p className="animate-fadeInUp delay-200" style={{ fontSize: "1.125rem", lineHeight: 1.75, color: "rgba(255,255,255,0.72)", marginBottom: "2.5rem", maxWidth: "540px" }}>
-              From lush lawns to stunning garden designs — our expert team turns your outdoor vision into a living masterpiece. Trusted by over 3,500 happy clients.
+            <p className="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+              Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert design, meticulous maintenance, and organic care for your environment.
             </p>
-
-            <div className="animate-fadeInUp delay-300" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
-              <Link href="/contact-us" id="hero-cta-primary" className="btn-primary">
-                Get a Free Quote →
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Link href="/contact-us" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:shadow-xl transition-all">
+                Get Free Quote
+                <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
-              <Link href="/projects" id="hero-cta-secondary" className="btn-outline">
-                View Our Work
-              </Link>
-            </div>
-
-            {/* Trust badges */}
-            <div className="animate-fadeInUp delay-400" style={{ marginTop: "3rem", display: "flex", flexWrap: "wrap", gap: "1.5rem", alignItems: "center" }}>
-              {["✅ Fully Insured", "🏆 Award Winning", "♻️ Eco Friendly"].map((badge) => (
-                <span key={badge} style={{ color: "rgba(255,255,255,0.55)", fontSize: "0.875rem", fontWeight: 500 }}>{badge}</span>
-              ))}
+              {/* <Link href="/contact-us" className="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-surface-container-high transition-all">
+                Contact Us
+              </Link> */}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ─── STATS ─────────────────────────────────────── */}
-      <section id="stats" style={{ background: "var(--gw-dark)", padding: "4rem 0" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: "1.5rem" }}>
-          {stats.map((s, i) => (
-            <div key={s.label} className={`stat-card animate-fadeInUp delay-${(i + 1) * 100}`}>
-              <div className="font-serif" style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 800, color: "#86d886", marginBottom: "0.5rem" }}>{s.value}</div>
-              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.9375rem" }}>{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ─── SERVICES ──────────────────────────────────── */}
-      <section id="services-preview" style={{ padding: "6rem 0", background: "#f8fcf8" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem" }}>
-          <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-            <div className="section-tag animate-fadeInUp" style={{ marginBottom: "1rem", justifyContent: "center" }}>What We Offer</div>
-            <h2 className="font-serif animate-fadeInUp delay-100" style={{ fontSize: "clamp(1.875rem,4vw,3rem)", fontWeight: 700, color: "var(--gw-dark)", marginBottom: "1rem" }}>
-              Our Core Services
-            </h2>
-            <p className="animate-fadeInUp delay-200" style={{ color: "#4a6b4a", maxWidth: "560px", margin: "0 auto", fontSize: "1.0625rem", lineHeight: 1.7 }}>
-              Comprehensive landscape solutions tailored to every outdoor space — from intimate gardens to grand estates.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "1.5rem" }}>
-            {services.map((svc, i) => (
-              <div key={svc.title} className={`service-card animate-fadeInUp delay-${(i % 3 + 1) * 100}`} style={{ position: "relative", zIndex: 0 }}>
-                <div className="service-icon">{svc.icon}</div>
-                <h3 style={{ fontSize: "1.125rem", fontWeight: 700, color: "var(--gw-dark)", marginBottom: "0.625rem", position: "relative", zIndex: 1 }}>{svc.title}</h3>
-                <p style={{ fontSize: "0.9375rem", lineHeight: 1.65, color: "#4a6b4a", position: "relative", zIndex: 1 }}>{svc.desc}</p>
+          <div className="hidden md:grid grid-cols-2 gap-4 h-[500px]">
+            <div className="space-y-4 pt-12">
+              <div className="h-64 rounded-2xl overflow-hidden shadow-2xl">
+                <img className="w-full h-full object-cover" alt="close up of vibrant green fern leaves with dew drops in a professional garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfxvlzEayXpiuoGCI76WRqfesF0pGL-VOxfHPc4mx-5h4SVlwav0rrP8ZKN3zAwzG3vM-3JYwzo8_fcU7Gc4xttJOQjrSQOhhlT9TmekJy1WOkOQ8lSqsDmRfnnHel9F7QsLePWHm5nWPQxBStwbzL60yO5WMUfLBJnWGnP1DFOahzuOg0xdwUbsHrgxK4xbeNTnYmUeT3mFgUHQqYUZs7NCX5jUBuYCUizdiOXn2xQ1oTbSjaa-9UzKQ0iGQDJGc5RKkYP9UBu_U" />
               </div>
-            ))}
-          </div>
-
-          <div style={{ textAlign: "center", marginTop: "3rem" }}>
-            <Link href="/services" id="services-all-btn" className="btn-primary">
-              Explore All Services →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── WHY US ────────────────────────────────────── */}
-      <section id="why-us" style={{ padding: "6rem 0", background: "#fff" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))", gap: "4rem", alignItems: "center" }}>
-          {/* Text */}
-          <div>
-            <div className="section-tag animate-fadeInLeft" style={{ marginBottom: "1rem" }}>Why Choose Us</div>
-            <h2 className="font-serif animate-fadeInLeft delay-100" style={{ fontSize: "clamp(1.75rem,4vw,2.75rem)", fontWeight: 700, color: "var(--gw-dark)", marginBottom: "1.5rem", lineHeight: 1.2 }}>
-              Passionate About Every Blade of Grass
-            </h2>
-            <p className="animate-fadeInLeft delay-200" style={{ color: "#4a6b4a", lineHeight: 1.75, marginBottom: "2rem" }}>
-              We combine horticultural expertise with genuine passion. Every project gets the same care and attention, whether it&apos;s a window box or a 10-acre estate.
-            </p>
-            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
-              {[
-                "Certified arborists and horticulturalists on every project",
-                "Sustainable, eco-friendly practices and materials",
-                "Transparent pricing — no hidden costs, ever",
-                "5-year workmanship guarantee on hard landscaping",
-              ].map((item) => (
-                <li key={item} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start", fontSize: "0.9375rem", color: "#2a452a" }}>
-                  <span style={{ color: "var(--gw-green-500)", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>✓</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <Link href="/about-us" id="about-cta" className="btn-primary">Learn About Us →</Link>
-          </div>
-
-          {/* Visual */}
-          <div className="animate-fadeInRight delay-200" style={{ position: "relative" }}>
-            <div style={{
-              width: "100%", aspectRatio: "1", borderRadius: "2rem",
-              background: "linear-gradient(135deg,#dcf5dc 0%,#b8ebb8 50%,#86d886 100%)",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: "8rem",
-              boxShadow: "0 30px 80px rgba(45,163,45,0.2)",
-            }} className="animate-float">
-              🌳
+              <div className="h-40 rounded-2xl bg-tertiary-container flex items-center justify-center p-6 text-on-tertiary-container text-center">
+                <div className="space-y-1">
+                  <div className="text-4xl font-black">15+</div>
+                  <div className="text-sm font-medium uppercase tracking-widest">Years Experience</div>
+                </div>
+              </div>
             </div>
-            {/* Badge */}
-            <div style={{
-              position: "absolute", bottom: "-1.5rem", left: "50%", transform: "translateX(-50%)",
-              background: "#fff", border: "1px solid #e8f5e8", borderRadius: "1rem",
-              padding: "1rem 1.75rem", boxShadow: "0 10px 40px rgba(0,0,0,0.1)",
-              textAlign: "center", whiteSpace: "nowrap",
-            }}>
-              <div className="font-serif" style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--gw-green-600)" }}>18+</div>
-              <div style={{ fontSize: "0.8125rem", fontWeight: 600, color: "#4a6b4a", letterSpacing: "0.05em" }}>YEARS OF EXCELLENCE</div>
+            <div className="space-y-4">
+              <div className="h-40 rounded-2xl bg-secondary flex items-center justify-center p-6 text-on-secondary text-center">
+                <div className="space-y-1">
+                  <div className="text-4xl font-black">500+</div>
+                  <div className="text-sm font-medium uppercase tracking-widest">Projects Completed</div>
+                </div>
+              </div>
+              <div className="h-80 rounded-2xl overflow-hidden shadow-2xl">
+                <img className="w-full h-full object-cover" alt="modern backyard patio design with limestone pavers and lush surrounding garden beds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoH2E8epzQy7h3hIcPGtowudTwWk5MMCrkhj0rYb1xXSswBMzgXD-cMPzL7IxSXgTzJt9hdo751Bb0HrFajRH5JrAHZfJluOaW5jhQCmuk5tiNSVf1a6gje7V20wcC2fCiDHyq9zxG2U94JFFiLy2kRax9IdiLmuFpn65xN8jU2jGjmQHZSR-s2Ems8ddUk6DFliJQLqOC8dsNjHlYVudBPU_gow5-ilaXxPc9VQyp-FY6oUSSPH5kVQg7PJbu3wqhsLEVI6ydBzk" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── CTA BANNER ────────────────────────────────── */}
-      <section id="cta-banner" style={{ padding: "5rem 0", background: "linear-gradient(135deg,#1f831f 0%,#155015 100%)" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", textAlign: "center" }}>
-          <h2 className="font-serif" style={{ fontSize: "clamp(1.875rem,4vw,3rem)", fontWeight: 700, color: "#fff", marginBottom: "1rem" }}>
-            Ready to Transform Your Outdoor Space?
-          </h2>
-          <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.0625rem", marginBottom: "2.5rem", maxWidth: "560px", margin: "0 auto 2.5rem" }}>
-            Get a free, no-obligation consultation and quote from our expert team today.
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-            <Link href="/contact-us" id="banner-cta" className="btn-outline">
-              Book a Free Consultation →
-            </Link>
-            <Link href="/projects" id="banner-projects" style={{ ...{}, color: "rgba(255,255,255,0.75)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.5rem", fontWeight: 500, fontSize: "1rem", padding: "0.875rem 1rem" }}>
-              See our projects ↗
-            </Link>
+      {/* Services Highlights - Bento Grid */}
+      <section className="py-24 px-8 max-w-7xl mx-auto">
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl font-extrabold text-primary mb-4">Crafting Natural Masterpieces</h2>
+          <p className="text-on-surface-variant max-w-2xl mx-auto">From residential retreats to commercial landscapes, we provide end-to-end solutions that harmonize with nature.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="large scale landscape architectural project with stone paths and diverse ornamental plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGYm1dh5zGH516JZjGxeGtcCO_yQG0j08u8L7izpFSelfhtbpvSiSNxfbnsULSXYMyEUpPqFuE9NrInemVMtryfP8BI4S-GSKs1lD8OnG8qU_0TOh--5t_37SOK9ZBjzEGAynstYf7HBsXhDcb9nnrF9xGybA5u69popVL1PemLms39vfwQBK7MT-RJcjBQhzyqS_GSc8ZNxfagI-P3z0fE9uSsEzqX_sWC0IzDzKtTEV7kTLiGMoFe-uT_3Liny1jJ1fpVBij8fM" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+              <h3 className="text-3xl font-bold mb-2">Landscape Architecture</h3>
+              <p className="text-on-primary-container/90 max-w-md">Custom design plans that blend aesthetics with functionality for your unique space.</p>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="professional gardener trimming hedges with precision tools in a formal garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr7dncE5tnRxv_pi0qnnfB0e8iiNNy3Jj163ZE0Yd1UfwF9UU6nmZrKkfOIyXnWjtGKV9hSm6qt6tQSSxtsb1FTHnR55z4702OfTFmFy6yhU5ac2JNdM-jgWixiOzZ0mCtGbKLq9t2hPqcX5nrTdd2qCvJkJz5_8yOX93Jb_TgQJXrvJ3NinMJinTXHFOMaSJuab_5d4CvZAMtmuRz6QX9jDn9tTX7Ua8sbUNFvHkyoReaBWeugtN1pFdibVq3cIbU149Qqluec_Q" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+              <h3 className="text-2xl font-bold mb-2">Seasonal Care</h3>
+              <p className="text-on-primary-container/90">Year-round maintenance to keep your greenery thriving and pristine.</p>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="automated irrigation system spraying water over a lush green golf course at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOdu5IlmQLrCPdZZ0hLDIZ9wisvMLmBXsTmHHmKCG5u_vitDZ5zL2D2Wxv3gg3bF3IL0SzAaNJm6OPFyL62thYWU2pKZsVQJSmdM6JPv_BLjoDqHv0GBE1jo3sTLdZN-BvcRdjAeKbA_FD48acn8f0Ue1mtwDQbVqk7D-0eq2KFwNoKTLypU-2Cb-WQ3F4QBPibyMigEZYsyWhWQj914jKsaEhAL-ysOmAankupRNfzsYqyT3nrQDd2X8R2_yyZU7DrT-zOiiLfdQ" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+              <h3 className="text-2xl font-bold mb-2">Smart Irrigation</h3>
+              <p className="text-on-primary-container/90">Water-efficient systems designed for sustainability.</p>
+            </div>
+          </div>
+          <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="modern outdoor living area with a stone fire pit and built-in wooden seating surrounded by plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39ZNE7zbpuu_uAQvxBACaf15O363tefCXVm6eKnUyrFF-_MOQ8rN5-fpOeYTywtNdwYIWz7ftWyhloWI4NLBfrA6ptXgkBtRAD1JvjZRW6WEY3zn6W0tiSL0cWs_L_jwyo60xJP5Zvyvdu04poVEQsBAvb-tgGr617KdhrmY6_JIGTYEmPCrbQti6Gdgq3vGXM7ihKpUUj8QFNzceIN_YSJK2F8enDos1c1UL_pMEXQ8DjEDTliQEaYmdvbe3cat3WcR_OiOiqFI" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+              <h3 className="text-3xl font-bold mb-2">Hardscape Design</h3>
+              <p className="text-on-primary-container/90 max-w-md">Beautiful stone work, patios, and retaining walls that last a lifetime.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-24 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <div className="aspect-square rounded-3xl overflow-hidden">
+                <img className="w-full h-full object-cover" alt="team of landscaping professionals discussing a site plan in a sunny garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDteqB5jUi1_-jUEC4_C6KKf7BorZtUh6BA173ZyFMQmYVRnC7vNQ1G7xgq09oYkvjI2jeiGRIdxnICcFIqwS-sKqbkd_vmek_56vXhVx8_n7ruJNeXQeknpWWXPVHqqbeUqEFqE8myvhRbEv1pl9QBCEfBDVkgESaMJVeTYE1BQe3vE5XAqrTlXiQ-T_bKWdO7HhOF36zGMC6V2dttWr_Z4HWIBs3_OA8zA1Jy-dPEcQWVvXbpTcBI2Q18VK7gLcMPBbTexB8Zjf8" />
+              </div>
+              <div className="absolute -bottom-6 -right-6 bg-primary text-on-primary p-8 rounded-2xl shadow-xl max-w-xs">
+                <p className="text-lg italic">"We don't just plant trees, we grow ecosystems that inspire the soul."</p>
+                <div className="mt-4 font-bold">- Marcus Green, Lead Designer</div>
+              </div>
+            </div>
+            <div className="space-y-10">
+              <div className="space-y-4">
+                <h2 className="text-4xl font-extrabold text-primary">Rooted in Excellence</h2>
+                <p className="text-on-surface-variant text-lg">Since 2009, we've been the trusted partner for premium landscaping solutions that respect the environment.</p>
+              </div>
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                    <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>eco</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-on-surface mb-1">Eco-Conscious Approach</h4>
+                    <p className="text-on-surface-variant">We prioritize native species and sustainable materials in every design.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                    <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>verified</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-on-surface mb-1">Certified Expertise</h4>
+                    <p className="text-on-surface-variant">Our team consists of licensed horticulturists and master landscapers.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                    <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>psychology_alt</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-on-surface mb-1">Vision-First Design</h4>
+                    <p className="text-on-surface-variant">We translate your personal style into a living, breathing landscape.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="py-20 px-8">
+        <div className="max-w-7xl mx-auto rounded-3xl bg-primary text-on-primary overflow-hidden relative">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <img className="w-full h-full object-cover" alt="abstract top down texture of lush green hedge leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDj7nzt6UNksWCbPLD8eKUUMi2qUEG4C2UVb0kg6rgeTepff4c8m99fnD4Ymuw23T1zeBrtdc5PhgWHJuSdOfc1AWtCu3JKSpJpJ8MmYoo3iiJpHfeXD0_XwhtfLKIEK54wZjDHzcI4FYp5gV1A-KIFDHhDMnB3qsT6OT8ZK7r9u_I3QPb2td2IgxJurBcsw3j-plkrW0uP6VfgAKj8Ekoe6GAJxv8tl0XWYlZ6zTf9ga-jk5dwlcyAn8c_N0PfJSJYQiZcVBSjqc" />
+          </div>
+          <div className="relative z-10 p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="space-y-4 text-center md:text-left">
+              <h2 className="text-4xl md:text-5xl font-black">Ready to transform your space?</h2>
+              <p className="text-xl text-on-primary-container max-w-xl">Join hundreds of homeowners who have elevated their living environment with our expert care.</p>
+            </div>
+            <div className="flex-shrink-0">
+              <button className="bg-secondary-fixed text-on-secondary-fixed px-10 py-5 rounded-2xl font-black text-xl hover:bg-secondary-fixed-dim transition-all shadow-lg hover:-translate-y-1">
+                Book Your Consultation
+              </button>
+            </div>
           </div>
         </div>
       </section>

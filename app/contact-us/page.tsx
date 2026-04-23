@@ -1,223 +1,135 @@
-'use client';
+import type { Metadata } from "next";
 
-import { useState } from 'react';
-
-const contactMethods = [
-  { icon: '📍', title: 'Visit Us',        detail: '123 Green Lane, Eco City, EH1 2GW',  sub: 'Mon–Sat 8am – 6pm' },
-  { icon: '📞', title: 'Call Us',         detail: '+1 (800) 473-3696',                  sub: 'Mon–Fri 8am – 5pm' },
-  { icon: '✉️', title: 'Email Us',        detail: 'hello@greenworld.com',               sub: 'We reply within 24 hrs' },
-  { icon: '💬', title: 'WhatsApp',        detail: '+1 (800) 473-3697',                  sub: 'Quick questions welcome' },
-];
-
-const services = [
-  'Lawn Care', 'Garden Design', 'Tree Surgery', 'Irrigation Systems', 'Seasonal Planting', 'Hard Landscaping', 'Other',
-];
+export const metadata: Metadata = {
+  title: "Contact Us | Green World Landscaping",
+  description: "Get in touch with Green World Landscaping for your next project.",
+};
 
 export default function ContactUsPage() {
-  const [formData, setFormData] = useState({
-    name: '', email: '', phone: '', service: '', message: '', budget: '',
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
   return (
-    <>
-      {/* ─── BANNER ──────────────────────────────────── */}
-      <section id="contact-banner" className="page-banner">
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center', position: 'relative', zIndex: 1 }}>
-          <div className="section-tag animate-fadeInUp" style={{ justifyContent: 'center', marginBottom: '1rem' }}>Get In Touch</div>
-          <h1 className="font-serif animate-fadeInUp delay-100" style={{ fontSize: 'clamp(2rem,5vw,3.75rem)', fontWeight: 800, color: '#fff', lineHeight: 1.15 }}>
-            Let&apos;s Create Your<br />
-            <span className="gw-gradient-text">Dream Garden</span>
-          </h1>
-          <p className="animate-fadeInUp delay-200" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.0625rem', marginTop: '1rem', maxWidth: '520px', margin: '1rem auto 0' }}>
-            Every great landscape starts with a conversation. Reach out and we&apos;ll get back to you within one working day.
-          </p>
-        </div>
+    <main className="min-h-screen bg-mesh">
+      {/* Hero Section */}
+      <section className="max-w-7xl mx-auto px-8 py-16 text-center">
+        <h1 className="font-headline text-5xl md:text-6xl font-extrabold text-on-surface mb-6 tracking-tight">
+          Let's Grow <span className="text-primary">Something Beautiful</span>
+        </h1>
+        <p className="font-body text-xl text-on-surface-variant max-w-2xl mx-auto">
+          From residential gardens to commercial green spaces, we're here to bring your vision to life.
+        </p>
       </section>
 
-      {/* ─── CONTACT METHODS ─────────────────────────── */}
-      <section id="contact-methods" style={{ padding: '4rem 0', background: '#f8fcf8' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: '1.25rem' }}>
-          {contactMethods.map((method, i) => (
-            <div
-              key={method.title}
-              id={`contact-method-${method.title.toLowerCase().replace(/\s/g, '-')}`}
-              className={`animate-fadeInUp delay-${(i + 1) * 100}`}
-              style={{ background: '#fff', border: '1px solid #e8f5e8', borderRadius: '1.25rem', padding: '1.75rem', textAlign: 'center', transition: 'all 0.3s ease' }}
-            >
-              <div style={{ fontSize: '2.25rem', marginBottom: '0.875rem' }}>{method.icon}</div>
-              <h3 style={{ fontWeight: 700, color: 'var(--gw-dark)', marginBottom: '0.375rem', fontSize: '1rem' }}>{method.title}</h3>
-              <p style={{ fontWeight: 600, color: 'var(--gw-green-600)', fontSize: '0.9375rem', marginBottom: '0.25rem' }}>{method.detail}</p>
-              <p style={{ fontSize: '0.8125rem', color: '#7a9a7a' }}>{method.sub}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ─── FORM + MAP ──────────────────────────────── */}
-      <section id="contact-form-section" style={{ padding: '2rem 0 6rem', background: '#f8fcf8' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(320px,1fr))', gap: '3rem', alignItems: 'start' }}>
-
-          {/* FORM */}
-          <div style={{ background: '#fff', border: '1px solid #e8f5e8', borderRadius: '1.5rem', padding: '2.5rem' }}>
-            {submitted ? (
-              <div style={{ textAlign: 'center', padding: '2rem 0' }}>
-                <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🌿</div>
-                <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--gw-dark)', marginBottom: '0.75rem' }}>
-                  Thank You, {formData.name.split(' ')[0]}!
-                </h2>
-                <p style={{ color: '#4a6b4a', lineHeight: 1.7 }}>
-                  We&apos;ve received your enquiry and a member of our team will be in touch within one working day.
-                </p>
+      {/* Main Content */}
+      <section className="max-w-7xl mx-auto px-8 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        {/* Left Column: Inquiry Form */}
+        <div className="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-8 md:p-12 shadow-xl border border-outline-variant/30">
+          <h2 className="font-headline text-3xl font-bold mb-8 text-on-surface">Project Inquiry</h2>
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Name</label>
+                <input className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="John Doe" type="text" />
               </div>
-            ) : (
-              <>
-                <h2 className="font-serif" style={{ fontSize: '1.625rem', fontWeight: 700, color: 'var(--gw-dark)', marginBottom: '0.375rem' }}>Send Us a Message</h2>
-                <p style={{ color: '#4a6b4a', fontSize: '0.9375rem', marginBottom: '2rem' }}>Fill in the form below and we&apos;ll prepare your free quote.</p>
+              <div className="space-y-2">
+                <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Phone</label>
+                <input className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="+1 (555) 000-0000" type="tel" />
+              </div>
+            </div>
+            
+            <div className="space-y-2">
+              <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Email</label>
+              <input className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="john@example.com" type="email" />
+            </div>
+            
+            <div className="space-y-2">
+              <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Service</label>
+              <select className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
+                <option>Landscape Design</option>
+                <option>Lawn Maintenance</option>
+                <option>Hardscaping & Patios</option>
+                <option>Irrigation Systems</option>
+                <option>Tree & Shrub Care</option>
+              </select>
+            </div>
+            
+            <div className="space-y-2">
+              <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Message</label>
+              <textarea className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Tell us about your project dreams..." rows={5}></textarea>
+            </div>
+            
+            <button className="w-full md:w-auto px-10 py-4 bg-primary text-on-primary font-bold rounded-xl hover:shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2" type="submit">
+              Send Inquiry
+              <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>send</span>
+            </button>
+          </form>
+        </div>
 
-                <form id="contact-form" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.125rem' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                    <div>
-                      <label htmlFor="contact-name" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, color: 'var(--gw-dark)', marginBottom: '0.375rem' }}>Full Name *</label>
-                      <input
-                        id="contact-name"
-                        name="name"
-                        type="text"
-                        required
-                        placeholder="Jane Smith"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="gw-input"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="contact-phone" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, color: 'var(--gw-dark)', marginBottom: '0.375rem' }}>Phone Number</label>
-                      <input
-                        id="contact-phone"
-                        name="phone"
-                        type="tel"
-                        placeholder="+44 7700 900000"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="gw-input"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="contact-email" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, color: 'var(--gw-dark)', marginBottom: '0.375rem' }}>Email Address *</label>
-                    <input
-                      id="contact-email"
-                      name="email"
-                      type="email"
-                      required
-                      placeholder="jane@example.com"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="gw-input"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contact-service" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, color: 'var(--gw-dark)', marginBottom: '0.375rem' }}>Service Required</label>
-                    <select
-                      id="contact-service"
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                      className="gw-input"
-                      style={{ appearance: 'none', cursor: 'pointer' }}
-                    >
-                      <option value="">Select a service…</option>
-                      {services.map((s) => <option key={s} value={s}>{s}</option>)}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="contact-budget" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, color: 'var(--gw-dark)', marginBottom: '0.375rem' }}>Approximate Budget</label>
-                    <select
-                      id="contact-budget"
-                      name="budget"
-                      value={formData.budget}
-                      onChange={handleChange}
-                      className="gw-input"
-                      style={{ appearance: 'none', cursor: 'pointer' }}
-                    >
-                      <option value="">Select a range…</option>
-                      {['Under £500', '£500 – £1,500', '£1,500 – £5,000', '£5,000 – £15,000', '£15,000+', 'Not sure yet'].map((b) => (
-                        <option key={b} value={b}>{b}</option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="contact-message" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, color: 'var(--gw-dark)', marginBottom: '0.375rem' }}>Tell Us About Your Project *</label>
-                    <textarea
-                      id="contact-message"
-                      name="message"
-                      required
-                      placeholder="Describe your outdoor space and what you'd like to achieve…"
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="gw-input gw-textarea"
-                    />
-                  </div>
-
-                  <button id="contact-submit" type="submit" className="btn-primary" style={{ justifyContent: 'center', marginTop: '0.5rem' }}>
-                    Send Enquiry →
-                  </button>
-                  <p style={{ fontSize: '0.8125rem', color: '#7a9a7a', textAlign: 'center' }}>
-                    By submitting you agree to our Privacy Policy. We never share your data.
-                  </p>
-                </form>
-              </>
-            )}
+        {/* Right Column: Manager & Info Bento */}
+        <div className="lg:col-span-5 space-y-8">
+          
+          {/* Liaison Card */}
+          <div className="bg-primary-container text-on-primary-container rounded-2xl p-8 overflow-hidden relative group">
+            <div className="relative z-10 flex flex-col md:flex-row gap-6 items-center">
+              <img alt="Professional portrait of a friendly manager named Raja" className="w-24 h-24 rounded-full object-cover border-4 border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc8v_Fp4xJ1h2HVwG75bg17pOese199vEMBnHgtblKSsPyWZqo5eXM8vrzkcy0eEGnZKYaSd00KEJvyG1NrcZF-kHbwwlq6ibLgFn22OgRQ-hEUZs5ONZqjw-B5y26Qo7dr3qwh-UUP7eB_HKrJqfhWunhKfmyjY1lmGqPUDSFZP47MA8xAU4QhmemIizheeeqmCzdU0jFQBHbhg9v_JnEjyfujWlRYZq9WQAF4TTTATU63EXdo3Q_8sD2fvz2lbgPPBdGDmfP2sA" />
+              <div>
+                <span className="text-xs font-bold uppercase tracking-widest text-on-primary-container/80 mb-1 block">Direct Liaison</span>
+                <h3 className="font-headline text-2xl font-extrabold mb-1">Raja</h3>
+                <p className="text-sm font-medium opacity-90 mb-4">Operations Manager</p>
+                <div className="flex flex-col gap-2">
+                  <a className="flex items-center gap-2 text-sm hover:underline" href="tel:+15551234567">
+                    <span className="material-symbols-outlined text-lg">call</span>
+                    (555) 123-4567
+                  </a>
+                  <a className="flex items-center gap-2 text-sm hover:underline" href="mailto:raja@greenworld.com">
+                    <span className="material-symbols-outlined text-lg">mail</span>
+                    raja@greenworld.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="absolute -right-4 -bottom-4 opacity-10">
+              <span className="material-symbols-outlined text-9xl">nature_people</span>
+            </div>
           </div>
 
-          {/* SIDEBAR */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            {/* Map placeholder */}
-            <div style={{
-              background: 'linear-gradient(135deg,#f0faf0 0%,#dcf5dc 50%,#b8ebb8 100%)',
-              borderRadius: '1.5rem', aspectRatio: '4/3',
-              display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-              border: '1px solid #e8f5e8',
-              gap: '0.75rem',
-            }}>
-              <div style={{ fontSize: '3.5rem' }}>🗺️</div>
-              <div style={{ fontWeight: 700, color: 'var(--gw-dark)' }}>123 Green Lane</div>
-              <div style={{ fontSize: '0.875rem', color: '#4a6b4a' }}>Eco City, EH1 2GW</div>
+          {/* Office Address & Map Bento */}
+          <div className="grid grid-cols-1 gap-6">
+            <div className="bg-surface-container-high rounded-2xl p-8 border border-outline-variant/30">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <span className="material-symbols-outlined text-primary">location_on</span>
+                </div>
+                <div>
+                  <h4 className="font-headline font-bold text-on-surface">Office Address</h4>
+                  <p className="text-on-surface-variant leading-relaxed">123 Everlasting Way, Suite 400<br />Green Valley, CA 90210</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <span className="material-symbols-outlined text-primary">schedule</span>
+                </div>
+                <div>
+                  <h4 className="font-headline font-bold text-on-surface">Working Hours</h4>
+                  <p className="text-on-surface-variant leading-relaxed">Mon - Fri: 8:00 AM - 6:00 PM<br />Sat: 9:00 AM - 2:00 PM</p>
+                </div>
+              </div>
             </div>
 
-            {/* FAQs */}
-            <div style={{ background: '#fff', border: '1px solid #e8f5e8', borderRadius: '1.5rem', padding: '2rem' }}>
-              <h3 style={{ fontWeight: 700, color: 'var(--gw-dark)', marginBottom: '1.25rem', fontSize: '1.0625rem' }}>Frequently Asked Questions</h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {[
-                  { q: 'How quickly can you start?', a: 'Usually within 2–4 weeks of your quote being accepted, depending on the season.' },
-                  { q: 'Are you fully insured?',     a: 'Yes — we carry £5m public liability insurance and all staff are DBS-checked.' },
-                  { q: 'Do you offer payment plans?', a: 'Yes — for projects over £2,000 we offer staged payments aligned to project milestones.' },
-                  { q: 'Do you work year-round?',    a: 'Absolutely. Some services like lawn care are seasonal, but our team works all year.' },
-                ].map((item) => (
-                  <div key={item.q} style={{ borderBottom: '1px solid #e8f5e8', paddingBottom: '1rem' }}>
-                    <p style={{ fontWeight: 600, color: 'var(--gw-dark)', fontSize: '0.9rem', marginBottom: '0.375rem' }}>{item.q}</p>
-                    <p style={{ color: '#4a6b4a', fontSize: '0.875rem', lineHeight: 1.6 }}>{item.a}</p>
+            {/* Map Placeholder */}
+            <div className="rounded-2xl overflow-hidden h-64 relative border border-outline-variant/30">
+              <div className="absolute inset-0 bg-neutral-200">
+                <img alt="Stylized map view" className="w-full h-full object-cover grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsDfSpYXhOPnuiwRTsF21XuHBTRGJHd7_w5STqb6jn6ndmkxPry9VkXWrWTBOvAzuIgfqiZ5pIsJC2WT0obO3YMav_RYPN0BNY_w6eQ-8XJ9ZUynVn8SKvuOdg28EgYcyrNfVq5dmuejAH5xatLb9AnTohW9bt0YW5xtuAhtxLRQQRUIJeWibrGNXtewFINK5EmW4TwZ_CFgLyD4Ub4KEwLPj8knwI5FTbWJnop8XO5WGAGZOa-yMqt0vLmHFqdaNU6Hx4CImFfYQ" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-primary p-3 rounded-full shadow-lg ring-8 ring-primary/20">
+                    <span className="material-symbols-outlined text-on-primary" style={{ fontVariationSettings: '"FILL" 1' }}>home_pin</span>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
-    </>
+    </main>
   );
 }
