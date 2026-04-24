@@ -9,7 +9,7 @@ export default function AboutUsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-24 px-8 overflow-hidden bg-surface-container-low">
+      <section className="relative py-20 px-6 overflow-hidden bg-surface-container-low">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="z-10">
             <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wider mb-6">ESTABLISHED 1998</span>
@@ -33,7 +33,7 @@ export default function AboutUsPage() {
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <img className="w-full h-full object-cover" alt="overhead view of a modern sustainable garden design featuring native plants, stone walkways, and a smart irrigation system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApJlJvFqKkHIfWZ9h5jRSIaP6PqGyACIFQZCCBH-j1CmAltwDuLJT1bkHtG9qj3qgn8djmHCj2jYyts3VkYGavyNHrdFDpDr8gT5dI2NiX2BDNGnKmyoFSD_VPA_OjerU0hq_UVj8NuMHtKhjvI3CjHxvDME0z4pmHM5rgxQffM_7SvfZe2t1GwBkC3p1J_oBTlOyYw5YiDsimln522fOlXIgNcmFLH2kvmSxh0rOk3Lgw3lmfj1d0d2IVUn3zQvvjZVQeMaolwhA" />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl flex items-center gap-4 border border-surface-container-high">
+            <div className="absolute -bottom-6 -left-4 md:-left-6 bg-white p-6 rounded-xl shadow-xl flex items-center gap-4 border border-surface-container-high">
               <div className="bg-primary-container p-3 rounded-lg">
                 <span className="material-symbols-outlined text-on-primary-container" style={{ fontVariationSettings: '"FILL" 1' }}>eco</span>
               </div>
@@ -47,10 +47,10 @@ export default function AboutUsPage() {
       </section>
 
       {/* Vision & Mission Bento Grid */}
-      <section className="py-24 px-8 max-w-7xl mx-auto">
+      <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-6">
           {/* Mission Card */}
-          <div className="md:col-span-2 bg-primary-container text-on-primary-container p-12 rounded-2xl flex flex-col justify-between">
+          <div className="md:col-span-2 bg-primary-container text-on-primary-container p-8 md:p-12 rounded-2xl flex flex-col justify-between">
             <div>
               <span className="material-symbols-outlined text-4xl mb-6">flag</span>
               <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
@@ -71,7 +71,7 @@ export default function AboutUsPage() {
           </div>
 
           {/* Vision Card */}
-          <div className="bg-surface-container-highest p-12 rounded-2xl border border-outline-variant flex flex-col">
+          <div className="bg-surface-container-highest p-8 md:p-12 rounded-2xl border border-outline-variant flex flex-col">
             <span className="material-symbols-outlined text-4xl text-primary mb-6">visibility</span>
             <h2 className="text-4xl font-bold mb-6 text-on-surface">Our Vision</h2>
             <p className="text-lg leading-relaxed text-on-surface-variant mb-6">
@@ -96,7 +96,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Core Values / Innovation Section */}
-      <section className="py-24 px-8 bg-surface-dim">
+      <section className="p-8 py-24 6 bg-surface-dim">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-on-surface mb-4">Innovation at Our Core</h2>
@@ -136,9 +136,9 @@ export default function AboutUsPage() {
       </section>
 
       {/* Sustainability Commitment */}
-      <section className="py-24 px-8 max-w-7xl mx-auto overflow-hidden">
+      <section className="py-24 px-6 max-w-7xl mx-auto overflow-hidden">
         <div className="bg-inverse-surface text-inverse-on-surface rounded-3xl flex flex-col md:flex-row items-stretch">
-          <div className="flex-1 p-12 lg:p-20">
+          <div className="flex-1 p-8 py-12 md:p-12 lg:p-20">
             <h2 className="text-4xl font-bold mb-8">Committed to the <span className="text-primary-fixed">Environment</span></h2>
             <div className="space-y-8">
               <div className="flex gap-4">

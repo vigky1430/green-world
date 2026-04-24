@@ -10,14 +10,14 @@ export default function ProjectsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="px-8 mb-24 max-w-screen-2xl mx-auto pt-8">
+      <section className="px-6 mb-24 max-w-screen-2xl mx-auto pt-8">
         <div className="flex flex-col md:flex-row gap-16 items-start">
           <div className="w-full md:w-1/2 pt-12 md:pt-24">
             <h1 className="font-headline text-[2.5rem] md:text-[3.5rem] leading-tight tracking-[-0.02em] font-extrabold text-on-surface mb-6">
               Our Portfolio of<br />
               <span className="text-gradient">Living Masterpieces</span>
             </h1>
-            <p className="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed mb-10">
+            <p className="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">
               We don't just plant; we sculpt space. Explore our collection of architectural landscapes where organic fluidity meets structural precision, creating enduring environments.
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Categories/Filters */}
-      <section className="px-8 mb-16 max-w-screen-2xl mx-auto">
+      <section className="px-6 mb-16 max-w-screen-2xl mx-auto">
         <div className="flex flex-wrap gap-4 border-b border-surface-variant pb-4">
           <button className="font-label text-xs uppercase tracking-[0.05em] px-4 py-2 font-bold text-primary border-b-2 border-primary -mb-[17px]">All Projects</button>
           <button className="font-label text-xs uppercase tracking-[0.05em] px-4 py-2 text-on-surface-variant hover:text-primary transition-colors">Residential</button>
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="px-8 mb-32 max-w-screen-2xl mx-auto">
+      <section className="px-6 mb-24 md:mb-32 max-w-screen-2xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
           
           {/* Project 1 (Large) */}
@@ -116,8 +116,8 @@ export default function ProjectsPage() {
       </section>
 
       {/* Before & After Transformation */}
-      <section className="bg-surface-container-low py-24 mb-32">
-        <div className="max-w-screen-2xl mx-auto px-8">
+      <section className="bg-surface-container-low py-16 md:py-24 mb-32">
+        <div className="max-w-screen-2xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-headline text-[1.75rem] font-bold text-on-surface mb-4">Structural Transformation</h2>
             <p className="font-body text-on-surface-variant max-w-2xl mx-auto">Witness the precision of our process. From raw earth to architectural refinement.</p>
@@ -138,7 +138,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-8 max-w-3xl mx-auto text-center mb-16">
+      <section className="px-6 max-w-3xl mx-auto text-center mb-16">
         <h2 className="font-headline text-[2.5rem] font-bold text-on-surface mb-6">Have a Vision? Let's Build It.</h2>
         <p className="font-body text-lg text-on-surface-variant mb-10">Schedule a consultation to discuss the structural and botanical requirements of your next project.</p>
         <Link href="/contact-us" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-on-primary gradient-primary rounded-md shadow-md hover:shadow-lg transition-all scale-100 hover:scale-[1.02]">

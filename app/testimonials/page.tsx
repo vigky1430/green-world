@@ -155,7 +155,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary text-white py-20 px-6 mt-12 overflow-hidden relative">
+      {/* <section className="bg-primary text-white py-20 px-6 mt-12 overflow-hidden relative">
         <div className="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
           <img alt="abstract garden texture with leaves and sunlight patterns" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Hq5kO_AluohuloW26TbQI6LNZF_Dyg1KdlUbQhtVpSOUWkraHt5q97I46JgNDW7TKCWXpey5V65eTNLdwLOZ4XCoKY_d2KKylZSEUOvVcLvTtw7LlQ5WKHbNqvfLumfDyOlHeh-rTs1eeGR5EhofPffqfJ4-B084pnIEgC6shr_QbEE4LR9jOu0D2LLL2jE7xKOD4roUIngG_Egp5l-cXDBWgaNrH1Th3X0H6cXdOhRkEnzuuGR-QHkTkGrG2A01Ho4Ar80ij_Q" />
         </div>
@@ -167,7 +167,7 @@ export default function TestimonialsPage() {
             <span className="material-symbols-outlined">rate_review</span>
           </Link>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

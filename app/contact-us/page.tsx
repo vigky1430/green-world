@@ -9,7 +9,7 @@ export default function ContactUsPage() {
   return (
     <main className="min-h-screen bg-mesh">
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-8 py-16 text-center">
+      <section className="max-w-7xl mx-auto px-6 py-16 text-center">
         <h1 className="font-headline text-5xl md:text-6xl font-extrabold text-on-surface mb-6 tracking-tight">
           Let's Grow <span className="text-primary">Something Beautiful</span>
         </h1>
@@ -19,10 +19,10 @@ export default function ContactUsPage() {
       </section>
 
       {/* Main Content */}
-      <section className="max-w-7xl mx-auto px-8 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <section className="max-w-7xl mx-auto px-6 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
         
         {/* Left Column: Inquiry Form */}
-        <div className="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-8 md:p-12 shadow-xl border border-outline-variant/30">
+        <div className="lg:col-span-7 bg-surface-container-lowest rounded-2xl px-6 py-8  md:p-12 shadow-xl border border-outline-variant/30">
           <h2 className="font-headline text-3xl font-bold mb-8 text-on-surface">Project Inquiry</h2>
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -69,8 +69,8 @@ export default function ContactUsPage() {
           
           {/* Liaison Card */}
           <div className="bg-primary-container text-on-primary-container rounded-2xl p-8 overflow-hidden relative group">
-            <div className="relative z-10 flex flex-col md:flex-row gap-6 items-center">
-              <img alt="Professional portrait of a friendly manager named Raja" className="w-24 h-24 rounded-full object-cover border-4 border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc8v_Fp4xJ1h2HVwG75bg17pOese199vEMBnHgtblKSsPyWZqo5eXM8vrzkcy0eEGnZKYaSd00KEJvyG1NrcZF-kHbwwlq6ibLgFn22OgRQ-hEUZs5ONZqjw-B5y26Qo7dr3qwh-UUP7eB_HKrJqfhWunhKfmyjY1lmGqPUDSFZP47MA8xAU4QhmemIizheeeqmCzdU0jFQBHbhg9v_JnEjyfujWlRYZq9WQAF4TTTATU63EXdo3Q_8sD2fvz2lbgPPBdGDmfP2sA" />
+            <div className="relative z-10 flex flex-col md:flex-row gap-6">
+              {/* <img alt="Professional portrait of a friendly manager named Raja" className="w-24 h-24 rounded-full object-cover border-4 border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc8v_Fp4xJ1h2HVwG75bg17pOese199vEMBnHgtblKSsPyWZqo5eXM8vrzkcy0eEGnZKYaSd00KEJvyG1NrcZF-kHbwwlq6ibLgFn22OgRQ-hEUZs5ONZqjw-B5y26Qo7dr3qwh-UUP7eB_HKrJqfhWunhKfmyjY1lmGqPUDSFZP47MA8xAU4QhmemIizheeeqmCzdU0jFQBHbhg9v_JnEjyfujWlRYZq9WQAF4TTTATU63EXdo3Q_8sD2fvz2lbgPPBdGDmfP2sA" /> */}
               <div>
                 <span className="text-xs font-bold uppercase tracking-widest text-on-primary-container/80 mb-1 block">Direct Liaison</span>
                 <h3 className="font-headline text-2xl font-extrabold mb-1">Raja</h3>
@@ -94,7 +94,7 @@ export default function ContactUsPage() {
 
           {/* Office Address & Map Bento */}
           <div className="grid grid-cols-1 gap-6">
-            <div className="bg-surface-container-high rounded-2xl p-8 border border-outline-variant/30">
+            <div className="bg-surface-container-high rounded-2xl p-6 md:p-8 border border-outline-variant/30">
               <div className="flex items-start gap-4 mb-6">
                 <div className="bg-primary/10 p-3 rounded-lg">
                   <span className="material-symbols-outlined text-primary">location_on</span>

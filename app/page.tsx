@@ -10,12 +10,12 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[870px] flex items-center overflow-hidden bg-surface-container-low">
+      <section className="relative flex items-center overflow-hidden bg-surface-container-low">
         <div className="absolute inset-0 z-0">
           <img className="w-full h-full object-cover opacity-20" alt="lush sprawling garden with manicured lawn, architectural shrubs, and soft morning sunlight filtering through oak trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_hHhMWT91fxOMG1u1ZODUxV8BdmnJdbxiChYpYgdsR_ABRzX6RWzgwPNzoy4NcANv-a7Eqpl4yWrtQU3GDCEhxqUP5GN1zPZfQt8yQnrpBqPSLPgZuJ28qiL428pEALpXjSKumsuCToZ7cRS1_VnW549_vwBkvFmIUIAEu_NmMCXyBMrfnFILjEZIl2MCusXxhooWV_XvNdU-4nXr4ulzWrgRoSlwsqUmiVOeqZoxsmg_d-PMy3tACBkDd_8Ip_Zw2zewF7aHNpk" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent"></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-8 py-20 w-full grid md:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-sm font-semibold uppercase tracking-wider">
               <span className="material-symbols-outlined !text-sm" style={{ fontVariationSettings: '"FILL" 1' }}>eco</span>
@@ -65,7 +65,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Highlights - Bento Grid */}
-      <section className="py-24 px-8 max-w-7xl mx-auto">
+      <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-extrabold text-primary mb-4">Crafting Natural Masterpieces</h2>
           <p className="text-on-surface-variant max-w-2xl mx-auto">From residential retreats to commercial landscapes, we provide end-to-end solutions that harmonize with nature.</p>
@@ -108,7 +108,7 @@ export default function HomePage() {
 
       {/* Why Choose Us */}
       <section className="py-24 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden">
@@ -159,7 +159,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 px-8">
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto rounded-3xl bg-primary text-on-primary overflow-hidden relative">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <img className="w-full h-full object-cover" alt="abstract top down texture of lush green hedge leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDj7nzt6UNksWCbPLD8eKUUMi2qUEG4C2UVb0kg6rgeTepff4c8m99fnD4Ymuw23T1zeBrtdc5PhgWHJuSdOfc1AWtCu3JKSpJpJ8MmYoo3iiJpHfeXD0_XwhtfLKIEK54wZjDHzcI4FYp5gV1A-KIFDHhDMnB3qsT6OT8ZK7r9u_I3QPb2td2IgxJurBcsw3j-plkrW0uP6VfgAKj8Ekoe6GAJxv8tl0XWYlZ6zTf9ga-jk5dwlcyAn8c_N0PfJSJYQiZcVBSjqc" />
