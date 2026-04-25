@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Green World Landscaping",
@@ -22,47 +23,7 @@ export default function ContactUsPage() {
       <section className="max-w-7xl mx-auto px-6 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
         
         {/* Left Column: Inquiry Form */}
-        <div className="lg:col-span-7 bg-surface-container-lowest rounded-2xl px-6 py-8  md:p-12 shadow-xl border border-outline-variant/30">
-          <h2 className="font-headline text-3xl font-bold mb-8 text-on-surface">Project Inquiry</h2>
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Name</label>
-                <input className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="John Doe" type="text" />
-              </div>
-              <div className="space-y-2">
-                <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Phone</label>
-                <input className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="+1 (555) 000-0000" type="tel" />
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Email</label>
-              <input className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="john@example.com" type="email" />
-            </div>
-            
-            <div className="space-y-2">
-              <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Service</label>
-              <select className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
-                <option>Landscape Design</option>
-                <option>Lawn Maintenance</option>
-                <option>Hardscaping & Patios</option>
-                <option>Irrigation Systems</option>
-                <option>Tree & Shrub Care</option>
-              </select>
-            </div>
-            
-            <div className="space-y-2">
-              <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Message</label>
-              <textarea className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Tell us about your project dreams..." rows={5}></textarea>
-            </div>
-            
-            <button className="w-full md:w-auto px-10 py-4 bg-primary text-on-primary font-bold rounded-xl hover:shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2" type="submit">
-              Send Inquiry
-              <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>send</span>
-            </button>
-          </form>
-        </div>
+        <ContactForm />
 
         {/* Right Column: Manager & Info Bento */}
         <div className="lg:col-span-5 space-y-8">
