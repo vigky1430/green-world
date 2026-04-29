@@ -1,11 +1,14 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, Suspense } from "react";
 import emailjs from "@emailjs/browser";
+import { useSearchParams } from "next/navigation";
 
-export default function ContactForm() {
+function ContactFormContent() {
   const form = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const searchParams = useSearchParams();
+  const preselectedService = searchParams.get("service") || "";
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -77,13 +80,18 @@ export default function ContactForm() {
           
           <div className="space-y-2">
             <label className="font-label text-sm font-semibold text-on-surface-variant ml-1">Service</label>
-            <select name="service" required className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
+            <select name="service" defaultValue={preselectedService} required className="w-full px-4 py-3 rounded-xl border-outline-variant bg-surface-container-low focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
               <option value="">Select a service...</option>
-              <option value="Landscape Design">Landscape Design</option>
-              <option value="Lawn Maintenance">Lawn Maintenance</option>
-              <option value="Hardscaping & Patios">Hardscaping & Patios</option>
-              <option value="Irrigation Systems">Irrigation Systems</option>
-              <option value="Tree & Shrub Care">Tree & Shrub Care</option>
+              <option value="Landscape maintenance">Landscape maintenance</option>
+              <option value="Landscape Design and Build works">Landscape Design and Build works</option>
+              <option value="Grass and Tree cutting Services">Grass and Tree cutting Services</option>
+              <option value="Water Features Installation">Water Features Installation</option>
+              <option value="Artificial Turf Service">Artificial Turf Service</option>
+              <option value="Hydroculture Service">Hydroculture Service</option>
+              <option value="Irrigation System Installation">Irrigation System Installation</option>
+              <option value="Fresh Flowers Floral Display">Fresh Flowers Floral Display</option>
+              <option value="Live and Artificial Green Wall Installation">Live and Artificial Green Wall Installation</option>
+              <option value="Construction Works">Construction Works</option>
             </select>
           </div>
           
@@ -107,5 +115,13 @@ export default function ContactForm() {
         </form>
       )}
     </div>
+  );
+}
+
+export default function ContactForm() {
+  return (
+    <Suspense fallback={<div className="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-12 shadow-xl animate-pulse">Loading form...</div>}>
+      <ContactFormContent />
+    </Suspense>
   );
 }

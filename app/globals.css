@@ -52,6 +52,27 @@
   --font-headline: "Manrope", sans-serif;
   --font-body: "Work Sans", sans-serif;
   --font-label: "Work Sans", sans-serif;
+
+  --animate-gradient-x: gradient-x 3s ease infinite;
+  --animate-wave: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 @layer base {

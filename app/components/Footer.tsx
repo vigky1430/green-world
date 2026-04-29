@@ -24,16 +24,16 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-primary mb-6">Services</h4>
           <ul className="space-y-4">
-            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Residential Design</Link></li>
-            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Commercial Care</Link></li>
-            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Smart Irrigation</Link></li>
-            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Tree Surgery</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Landscape maintenance</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Landscape Design & Build</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Irrigation Systems</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/services">Construction Works</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-bold text-primary mb-6">Quick Links</h4>
           <ul className="space-y-4">
-            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/about-us">Careers</Link></li>
+            <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/contact-us">contact</Link></li>
             <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/about-us">Sustainability</Link></li>
             <li><Link className="text-neutral-500 dark:text-neutral-400 hover:underline decoration-[#66bb6a] transition-all opacity-80 hover:opacity-100" href="/testimonials">Testimonials</Link></li>
           </ul>
@@ -41,9 +41,18 @@ export default function Footer() {
         <div className="space-y-6">
           <h4 className="font-bold text-primary mb-6">Our Location</h4>
           <div className="rounded-xl overflow-hidden h-32 border border-outline-variant">
-            <img className="w-full h-full object-cover" data-alt="map view showing local city streets and park areas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO6b6gWsb5ryl9o-egBLmFRkUtuY3AI0ZTKJ0xPRc5mn0zKNue5aoSAx3T_9du6ogI4r18WjE2EYqiMaU_xwggqcqe9BsgR1IoAm4vXilv6u3JWJcYy_SZhpd02PF0XNfW78zYO9pedX8wcXV8IiYnwnShoosQYlKCKB34IdJ_3M-cxUCSZDLvwrQH7BZTAaJcYXMYey_A8Wxqonl4_QMYOr19amq5BvKYQ_uXKpqbe6tBIA3K-Uqx9kIz9JJfr4cgCNiHi3qx_gg" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5523747105854!2d103.7727924!3d1.4433779999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da12fdd5f7c5a3%3A0x3939cda18ca38cde!2s32%20Marsiling%20Dr%2C%20Singapore%20730032!5e0!3m2!1sen!2sin!4v1777483746767!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Green World Landscaping Office Location"
+            />
           </div>
-          <p className="text-neutral-500 dark:text-neutral-400 text-sm">123 Green Way, Eco City, OR 97201</p>
+          <p className="text-neutral-500 dark:text-neutral-400 text-sm">32 Marsiling Dr, Singapore 730032</p>
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-8 py-8 border-t border-neutral-200 dark:border-neutral-800 text-center md:text-left">

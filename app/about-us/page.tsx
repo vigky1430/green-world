@@ -84,7 +84,7 @@ export default function AboutUsPage() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
-                <span className="font-medium">AI-Driven Irrigation</span>
+                <span className="font-medium">Smart Irrigation</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>

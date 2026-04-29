@@ -62,7 +62,7 @@ export default function ContactUsPage() {
                 </div>
                 <div>
                   <h4 className="font-headline font-bold text-on-surface">Office Address</h4>
-                  <p className="text-on-surface-variant leading-relaxed">123 Everlasting Way, Suite 400<br />Green Valley, CA 90210</p>
+                  <p className="text-on-surface-variant leading-relaxed">32 Marsiling Dr,<br />Singapore 730032</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -76,16 +76,18 @@ export default function ContactUsPage() {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="rounded-2xl overflow-hidden h-64 relative border border-outline-variant/30">
-              <div className="absolute inset-0 bg-neutral-200">
-                <img alt="Stylized map view" className="w-full h-full object-cover grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsDfSpYXhOPnuiwRTsF21XuHBTRGJHd7_w5STqb6jn6ndmkxPry9VkXWrWTBOvAzuIgfqiZ5pIsJC2WT0obO3YMav_RYPN0BNY_w6eQ-8XJ9ZUynVn8SKvuOdg28EgYcyrNfVq5dmuejAH5xatLb9AnTohW9bt0YW5xtuAhtxLRQQRUIJeWibrGNXtewFINK5EmW4TwZ_CFgLyD4Ub4KEwLPj8knwI5FTbWJnop8XO5WGAGZOa-yMqt0vLmHFqdaNU6Hx4CImFfYQ" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-primary p-3 rounded-full shadow-lg ring-8 ring-primary/20">
-                    <span className="material-symbols-outlined text-on-primary" style={{ fontVariationSettings: '"FILL" 1' }}>home_pin</span>
-                  </div>
-                </div>
-              </div>
+            {/* Google Maps Embed */}
+            <div className="rounded-2xl overflow-hidden h-64 border border-outline-variant/30">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5523747105854!2d103.7727924!3d1.4433779999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da12fdd5f7c5a3%3A0x3939cda18ca38cde!2s32%20Marsiling%20Dr%2C%20Singapore%20730032!5e0!3m2!1sen!2sin!4v1777483746767!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Green World Landscaping Office Location"
+              />
             </div>
           </div>
 

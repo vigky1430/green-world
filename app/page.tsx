@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 export const metadata: Metadata = {
   title: "Green World Landscaping | Transform Your Vision",
@@ -22,7 +23,21 @@ export default function HomePage() {
               Premium Landscaping Services
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
-              We Make Greenery For Your Vision
+              We Make{" "}
+              <span className="inline-flex">
+                {"Greenery".split("").map((char, index) => (
+                  <span
+                    key={index}
+                    className="animate-wave inline-block"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#00ac3f] to-primary bg-[length:200%_auto] animate-gradient-x">
+                      {char}
+                    </span>
+                  </span>
+                ))}
+              </span>{" "}
+              For Your Vision
             </h1>
             <p className="text-xl text-on-surface-variant max-w-lg leading-relaxed">
               Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert design, meticulous maintenance, and organic care for your environment.
@@ -39,12 +54,12 @@ export default function HomePage() {
           </div>
           <div className="hidden md:grid grid-cols-2 gap-4 h-[500px]">
             <div className="space-y-4 pt-12">
-              <div className="h-64 rounded-2xl overflow-hidden shadow-2xl">
-                <img className="w-full h-full object-cover" alt="close up of vibrant green fern leaves with dew drops in a professional garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfxvlzEayXpiuoGCI76WRqfesF0pGL-VOxfHPc4mx-5h4SVlwav0rrP8ZKN3zAwzG3vM-3JYwzo8_fcU7Gc4xttJOQjrSQOhhlT9TmekJy1WOkOQ8lSqsDmRfnnHel9F7QsLePWHm5nWPQxBStwbzL60yO5WMUfLBJnWGnP1DFOahzuOg0xdwUbsHrgxK4xbeNTnYmUeT3mFgUHQqYUZs7NCX5jUBuYCUizdiOXn2xQ1oTbSjaa-9UzKQ0iGQDJGc5RKkYP9UBu_U" />
+              <div className="h-64 rounded-2xl overflow-hidden shadow-2xl group">
+                <img className="w-full h-full object-cover transition-transform group-hover:scale-110" alt="close up of vibrant green fern leaves with dew drops in a professional garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfxvlzEayXpiuoGCI76WRqfesF0pGL-VOxfHPc4mx-5h4SVlwav0rrP8ZKN3zAwzG3vM-3JYwzo8_fcU7Gc4xttJOQjrSQOhhlT9TmekJy1WOkOQ8lSqsDmRfnnHel9F7QsLePWHm5nWPQxBStwbzL60yO5WMUfLBJnWGnP1DFOahzuOg0xdwUbsHrgxK4xbeNTnYmUeT3mFgUHQqYUZs7NCX5jUBuYCUizdiOXn2xQ1oTbSjaa-9UzKQ0iGQDJGc5RKkYP9UBu_U" />
               </div>
               <div className="h-40 rounded-2xl bg-tertiary-container flex items-center justify-center p-6 text-on-tertiary-container text-center">
                 <div className="space-y-1">
-                  <div className="text-4xl font-black">15+</div>
+                  <AnimatedCounter end={15} suffix="+" className="text-4xl font-black" />
                   <div className="text-sm font-medium uppercase tracking-widest">Years Experience</div>
                 </div>
               </div>
@@ -52,12 +67,12 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="h-40 rounded-2xl bg-secondary flex items-center justify-center p-6 text-on-secondary text-center">
                 <div className="space-y-1">
-                  <div className="text-4xl font-black">500+</div>
+                  <AnimatedCounter end={500} suffix="+" className="text-4xl font-black" />
                   <div className="text-sm font-medium uppercase tracking-widest">Projects Completed</div>
                 </div>
               </div>
-              <div className="h-80 rounded-2xl overflow-hidden shadow-2xl">
-                <img className="w-full h-full object-cover" alt="modern backyard patio design with limestone pavers and lush surrounding garden beds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoH2E8epzQy7h3hIcPGtowudTwWk5MMCrkhj0rYb1xXSswBMzgXD-cMPzL7IxSXgTzJt9hdo751Bb0HrFajRH5JrAHZfJluOaW5jhQCmuk5tiNSVf1a6gje7V20wcC2fCiDHyq9zxG2U94JFFiLy2kRax9IdiLmuFpn65xN8jU2jGjmQHZSR-s2Ems8ddUk6DFliJQLqOC8dsNjHlYVudBPU_gow5-ilaXxPc9VQyp-FY6oUSSPH5kVQg7PJbu3wqhsLEVI6ydBzk" />
+              <div className="h-80 rounded-2xl overflow-hidden shadow-2xl group">
+                <img className="w-full h-full object-cover transition-transform group-hover:scale-110" alt="modern backyard patio design with limestone pavers and lush surrounding garden beds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoH2E8epzQy7h3hIcPGtowudTwWk5MMCrkhj0rYb1xXSswBMzgXD-cMPzL7IxSXgTzJt9hdo751Bb0HrFajRH5JrAHZfJluOaW5jhQCmuk5tiNSVf1a6gje7V20wcC2fCiDHyq9zxG2U94JFFiLy2kRax9IdiLmuFpn65xN8jU2jGjmQHZSR-s2Ems8ddUk6DFliJQLqOC8dsNjHlYVudBPU_gow5-ilaXxPc9VQyp-FY6oUSSPH5kVQg7PJbu3wqhsLEVI6ydBzk" />
               </div>
             </div>
           </div>
@@ -71,38 +86,46 @@ export default function HomePage() {
           <p className="text-on-surface-variant max-w-2xl mx-auto">From residential retreats to commercial landscapes, we provide end-to-end solutions that harmonize with nature.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="large scale landscape architectural project with stone paths and diverse ornamental plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGYm1dh5zGH516JZjGxeGtcCO_yQG0j08u8L7izpFSelfhtbpvSiSNxfbnsULSXYMyEUpPqFuE9NrInemVMtryfP8BI4S-GSKs1lD8OnG8qU_0TOh--5t_37SOK9ZBjzEGAynstYf7HBsXhDcb9nnrF9xGybA5u69popVL1PemLms39vfwQBK7MT-RJcjBQhzyqS_GSc8ZNxfagI-P3z0fE9uSsEzqX_sWC0IzDzKtTEV7kTLiGMoFe-uT_3Liny1jJ1fpVBij8fM" />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
-              <h3 className="text-3xl font-bold mb-2">Landscape Architecture</h3>
-              <p className="text-on-primary-container/90 max-w-md">Custom design plans that blend aesthetics with functionality for your unique space.</p>
+            <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+              <Link href="/contact-us">
+                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="large scale landscape architectural project with stone paths and diverse ornamental plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGYm1dh5zGH516JZjGxeGtcCO_yQG0j08u8L7izpFSelfhtbpvSiSNxfbnsULSXYMyEUpPqFuE9NrInemVMtryfP8BI4S-GSKs1lD8OnG8qU_0TOh--5t_37SOK9ZBjzEGAynstYf7HBsXhDcb9nnrF9xGybA5u69popVL1PemLms39vfwQBK7MT-RJcjBQhzyqS_GSc8ZNxfagI-P3z0fE9uSsEzqX_sWC0IzDzKtTEV7kTLiGMoFe-uT_3Liny1jJ1fpVBij8fM" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+                    <h3 className="text-3xl font-bold mb-2">Landscape Design and Build works</h3>
+                    <p className="text-on-primary-container/90 max-w-md">Custom design plans that blend aesthetics with functionality for your unique space.</p>
+                  </div>
+              </Link>
             </div>
-          </div>
-          <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="professional gardener trimming hedges with precision tools in a formal garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr7dncE5tnRxv_pi0qnnfB0e8iiNNy3Jj163ZE0Yd1UfwF9UU6nmZrKkfOIyXnWjtGKV9hSm6qt6tQSSxtsb1FTHnR55z4702OfTFmFy6yhU5ac2JNdM-jgWixiOzZ0mCtGbKLq9t2hPqcX5nrTdd2qCvJkJz5_8yOX93Jb_TgQJXrvJ3NinMJinTXHFOMaSJuab_5d4CvZAMtmuRz6QX9jDn9tTX7Ua8sbUNFvHkyoReaBWeugtN1pFdibVq3cIbU149Qqluec_Q" />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
-              <h3 className="text-2xl font-bold mb-2">Seasonal Care</h3>
-              <p className="text-on-primary-container/90">Year-round maintenance to keep your greenery thriving and pristine.</p>
+            <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+              <Link href="/contact-us">
+                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="professional gardener trimming hedges with precision tools in a formal garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr7dncE5tnRxv_pi0qnnfB0e8iiNNy3Jj163ZE0Yd1UfwF9UU6nmZrKkfOIyXnWjtGKV9hSm6qt6tQSSxtsb1FTHnR55z4702OfTFmFy6yhU5ac2JNdM-jgWixiOzZ0mCtGbKLq9t2hPqcX5nrTdd2qCvJkJz5_8yOX93Jb_TgQJXrvJ3NinMJinTXHFOMaSJuab_5d4CvZAMtmuRz6QX9jDn9tTX7Ua8sbUNFvHkyoReaBWeugtN1pFdibVq3cIbU149Qqluec_Q" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+                    <h3 className="text-2xl font-bold mb-2">Landscape maintenance</h3>
+                    <p className="text-on-primary-container/90">Year-round maintenance to keep your greenery thriving and pristine.</p>
+                  </div>
+              </Link>
             </div>
-          </div>
-          <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="automated irrigation system spraying water over a lush green golf course at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOdu5IlmQLrCPdZZ0hLDIZ9wisvMLmBXsTmHHmKCG5u_vitDZ5zL2D2Wxv3gg3bF3IL0SzAaNJm6OPFyL62thYWU2pKZsVQJSmdM6JPv_BLjoDqHv0GBE1jo3sTLdZN-BvcRdjAeKbA_FD48acn8f0Ue1mtwDQbVqk7D-0eq2KFwNoKTLypU-2Cb-WQ3F4QBPibyMigEZYsyWhWQj914jKsaEhAL-ysOmAankupRNfzsYqyT3nrQDd2X8R2_yyZU7DrT-zOiiLfdQ" />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
-              <h3 className="text-2xl font-bold mb-2">Smart Irrigation</h3>
-              <p className="text-on-primary-container/90">Water-efficient systems designed for sustainability.</p>
+            <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+              <Link href="/contact-us">
+                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="automated irrigation system spraying water over a lush green golf course at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOdu5IlmQLrCPdZZ0hLDIZ9wisvMLmBXsTmHHmKCG5u_vitDZ5zL2D2Wxv3gg3bF3IL0SzAaNJm6OPFyL62thYWU2pKZsVQJSmdM6JPv_BLjoDqHv0GBE1jo3sTLdZN-BvcRdjAeKbA_FD48acn8f0Ue1mtwDQbVqk7D-0eq2KFwNoKTLypU-2Cb-WQ3F4QBPibyMigEZYsyWhWQj914jKsaEhAL-ysOmAankupRNfzsYqyT3nrQDd2X8R2_yyZU7DrT-zOiiLfdQ" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+                    <h3 className="text-2xl font-bold mb-2">Irrigation System Installation</h3>
+                    <p className="text-on-primary-container/90">Water-efficient systems designed for sustainability.</p>
+                  </div>
+              </Link>
             </div>
-          </div>
-          <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-            <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="modern outdoor living area with a stone fire pit and built-in wooden seating surrounded by plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39ZNE7zbpuu_uAQvxBACaf15O363tefCXVm6eKnUyrFF-_MOQ8rN5-fpOeYTywtNdwYIWz7ftWyhloWI4NLBfrA6ptXgkBtRAD1JvjZRW6WEY3zn6W0tiSL0cWs_L_jwyo60xJP5Zvyvdu04poVEQsBAvb-tgGr617KdhrmY6_JIGTYEmPCrbQti6Gdgq3vGXM7ihKpUUj8QFNzceIN_YSJK2F8enDos1c1UL_pMEXQ8DjEDTliQEaYmdvbe3cat3WcR_OiOiqFI" />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-on-primary">
-              <h3 className="text-3xl font-bold mb-2">Hardscape Design</h3>
-              <p className="text-on-primary-container/90 max-w-md">Beautiful stone work, patios, and retaining walls that last a lifetime.</p>
+            <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
+              <Link href="/contact-us">
+                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="modern outdoor living area with a stone fire pit and built-in wooden seating surrounded by plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39ZNE7zbpuu_uAQvxBACaf15O363tefCXVm6eKnUyrFF-_MOQ8rN5-fpOeYTywtNdwYIWz7ftWyhloWI4NLBfrA6ptXgkBtRAD1JvjZRW6WEY3zn6W0tiSL0cWs_L_jwyo60xJP5Zvyvdu04poVEQsBAvb-tgGr617KdhrmY6_JIGTYEmPCrbQti6Gdgq3vGXM7ihKpUUj8QFNzceIN_YSJK2F8enDos1c1UL_pMEXQ8DjEDTliQEaYmdvbe3cat3WcR_OiOiqFI" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-8 text-on-primary">
+                    <h3 className="text-3xl font-bold mb-2">Construction Works</h3>
+                    <p className="text-on-primary-container/90 max-w-md">Beautiful stone work, patios, retaining walls, and custom hardscaping that last a lifetime.</p>
+                  </div>
+              </Link>
             </div>
-          </div>
         </div>
       </section>
 
