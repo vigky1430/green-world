@@ -163,7 +163,7 @@ export default async function TestimonialsPage() {
         </div>
         <div className="relative z-10 text-center px-6 max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4">
-            What Our Clients Say
+            Happy Client Reviews
           </h1>
           <p className="text-xl text-on-primary-container max-w-2xl mx-auto font-medium">
             Hear from the homeowners and businesses we&apos;ve helped transform

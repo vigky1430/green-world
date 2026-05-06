@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -6,13 +7,24 @@ export const metadata: Metadata = {
 };
 
 export default function AboutUsPage() {
+  const startDate = new Date("2024-11-25");
+  const today = new Date();
+  let yearsExperience = today.getFullYear() - startDate.getFullYear();
+  if (
+    today.getMonth() < startDate.getMonth() ||
+    (today.getMonth() === startDate.getMonth() && today.getDate() < startDate.getDate())
+  ) {
+    yearsExperience--;
+  }
+  yearsExperience = Math.max(0, yearsExperience);
+
   return (
     <>
       {/* Hero Section */}
       <section className="relative py-20 px-6 overflow-hidden bg-surface-container-low">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wider mb-6">ESTABLISHED 1998</span>
+            <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wider mb-6">ESTABLISHED 2025</span>
             <h1 className="text-5xl md:text-6xl font-extrabold text-on-surface leading-tight mb-6">Cultivating the Future of <span className="text-primary">Sustainable Landscapes</span></h1>
             <p className="text-lg text-on-surface-variant leading-relaxed max-w-lg mb-8 font-body">
               We blend innovative technology with ecological wisdom to create outdoor spaces that aren't just beautiful, but are living systems designed to thrive for generations.
@@ -24,14 +36,14 @@ export default function AboutUsPage() {
                 <img className="w-12 h-12 rounded-full border-4 border-surface" alt="sustainable design consultant working on a site plan at a wooden desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxyda8GVEjnC9vn7JoxMgjbTyJu9YdWGNMqrOkyMMzhK6W9u5GunwriJW6IM3zIBvvnbqI4AMvoggRi55gMY0lw1VYMHhry1Q3kCU2BJkYhUz4CMBj9Dlla_RczBUZYq8n3MsGYe2081MMJ_BbDdOvXMm5SgoaaIup5B4g0TfZf6Khd2qTIMc8TRAlvKBEFsyGtTm6PNPRgdTlOyCSpvB7lXyy3PoOtMUqUgr-iuZq6n51l9x15bsSvZca2rIEbE3Veneh7PSzK-E" />
               </div>
               <div className="text-sm">
-                <p className="font-bold text-on-surface">Join 500+ Happy Clients</p>
+                <p className="font-bold text-on-surface">Join 5+ Happy Clients</p>
                 <p className="text-on-surface-variant">Expert-led sustainable projects</p>
               </div>
             </div>
           </div>
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-              <img className="w-full h-full object-cover" alt="overhead view of a modern sustainable garden design featuring native plants, stone walkways, and a smart irrigation system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApJlJvFqKkHIfWZ9h5jRSIaP6PqGyACIFQZCCBH-j1CmAltwDuLJT1bkHtG9qj3qgn8djmHCj2jYyts3VkYGavyNHrdFDpDr8gT5dI2NiX2BDNGnKmyoFSD_VPA_OjerU0hq_UVj8NuMHtKhjvI3CjHxvDME0z4pmHM5rgxQffM_7SvfZe2t1GwBkC3p1J_oBTlOyYw5YiDsimln522fOlXIgNcmFLH2kvmSxh0rOk3Lgw3lmfj1d0d2IVUn3zQvvjZVQeMaolwhA" />
+              <img className="w-full h-full object-cover" alt="overhead view of a modern sustainable garden design featuring native plants, stone walkways, and a smart irrigation system" src="/images/WhatsApp Image 2026-05-03 at 6.48.51 PM.jpeg" />
             </div>
             <div className="absolute -bottom-6 -left-4 md:-left-6 bg-white p-6 rounded-xl shadow-xl flex items-center gap-4 border border-surface-container-high">
               <div className="bg-primary-container p-3 rounded-lg">
@@ -60,11 +72,11 @@ export default function AboutUsPage() {
             </div>
             <div className="mt-12 flex items-center gap-8">
               <div className="flex flex-col">
-                <span className="text-3xl font-black">25+</span>
+                <AnimatedCounter end={yearsExperience} suffix="+" className="text-3xl font-black" />
                 <span className="text-sm uppercase tracking-tighter font-bold opacity-75">Years Experience</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-3xl font-black">1.2k</span>
+                <span className="text-3xl font-black">2.5+</span>
                 <span className="text-sm uppercase tracking-tighter font-bold opacity-75">Hectares Restored</span>
               </div>
             </div>
