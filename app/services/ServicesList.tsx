@@ -24,8 +24,11 @@ const SERVICES: Service[] = [
     longDesc: "Our comprehensive maintenance programs are designed to keep your landscape in peak condition throughout the year. We combine traditional horticultural wisdom with modern soil science to ensure your plants thrive.",
     features: ["Seasonal Cleanup", "Turf Management", "Soil Enrichment", "General Upkeep"],
     images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAjCWnxAh8uXiHdgI3Dah90l3_OlkVKwSh8-kyVsChZTQPIB33VTLa_acrHKWCFd_NX5bqNvyE52ByYGlw1cejQ4a8eotspmjFlkjouDndBBnKie9vGKI80Yv0ikHLj5-sAXc3Ud0b-Ft0vXvJ9zv4IH4xaobNE3WkZMTvLIwPbYedIFWjCBvuBbaFRJJId-NjcjgYWfsCZMVrMC9cfA0Bucfn-_ovMI6gWaGF-aMAmCFEL-u-o1s68brCqu3AWByMYWZ5XxMCBoWg",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDr7dncE5tnRxv_pi0qnnfB0e8iiNNy3Jj163ZE0Yd1UfwF9UU6nmZrKkfOIyXnWjtGKV9hSm6qt6tQSSxtsb1FTHnR55z4702OfTFmFy6yhU5ac2JNdM-jgWixiOzZ0mCtGbKLq9t2hPqcX5nrTdd2qCvJkJz5_8yOX93Jb_TgQJXrvJ3NinMJinTXHFOMaSJuab_5d4CvZAMtmuRz6QX9jDn9tTX7Ua8sbUNFvHkyoReaBWeugtN1pFdibVq3cIbU149Qqluec_Q"
+      "/images/landscape-maintanance/landscape-maintanance-1.jpeg",
+      "/images/landscape-maintanance/landscape-maintanance-2.jpeg",
+      "/images/landscape-maintanance/landscape-maintanance-3.jpeg",
+      "/images/landscape-maintanance/landscape-maintanance-4.jpeg",
+      "/images/landscape-maintanance/landscape-maintanance-5.jpeg"
     ],
     color: "surface",
     gridSpan: "md:col-span-4 lg:col-span-8",
@@ -50,7 +53,8 @@ const SERVICES: Service[] = [
     shortDesc: "Expert tree health assessments, pruning, and precise grass cutting.",
     longDesc: "Our arborist-led team provides expert care for your trees and turf. We focus on long-term plant health, using precision techniques to enhance growth and prevent disease.",
     images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDVGJOGknMHiC3KVg6zR-9Pw6KDp-4IFgh9GQjyoKr2UySFLpsqLU-aP-9chDXTcpDB4yaNP8hliym09rPZf7PiGefvDNqt-VhVUAN7spSm3tk4b_b_RTsPU-PAglqpWH-0tdF7V0EY1M7HKGIjwGrETg9_YfTNEF6jBDCdfJIpNMRiQJxmymyQLOWEtK7VPkXqrf3KM7UsMgQLgsMSH7dkNuCge4xXOCoh63bpfQiTXbc7kCsoNw3osAeGKINj3zRhs6c5EdRDn5I"
+      "/images/tree-planting/tree-planting-1.jpeg",
+      "/images/tree-planting/tree-planting-2.jpeg"
     ],
     color: "surface",
     gridSpan: "md:col-span-2 lg:col-span-4",
@@ -97,7 +101,21 @@ const SERVICES: Service[] = [
     icon: "science",
     shortDesc: "Soil-less planting solutions for indoor and unique outdoor spaces.",
     longDesc: "Embrace the future of planting with our hydroculture services. Ideal for corporate offices and modern homes, these systems offer cleaner, more controlled plant growth with minimal mess.",
-    images: ["/images/hydroculture_setup.png"],
+    images: [
+      "/images/hydro-culture/hydro-culture-1.jpeg",
+      "/images/hydro-culture/hydro-culture-2.jpeg",
+      "/images/hydro-culture/hydro-culture-3.jpeg",
+      "/images/hydro-culture/hydro-culture-4.jpeg",
+      "/images/hydro-culture/hydro-culture-5.jpeg",
+      "/images/hydro-culture/hydro-culture-6.jpeg",
+      "/images/hydro-culture/hydro-culture-7.jpeg",
+      "/images/hydro-culture/hydro-culture-8.jpeg",
+      "/images/hydro-culture/hydro-culture-9.jpeg",
+      "/images/hydro-culture/hydro-culture-10.jpeg",
+      "/images/hydro-culture/hydro-culture-11.jpeg",
+      "/images/hydro-culture/hydro-culture-12.jpeg",
+      "/images/hydro-culture/hydro-culture-13.jpeg"
+    ],
     color: "high",
     gridSpan: "md:col-span-4 lg:col-span-3",
   },
@@ -117,7 +135,10 @@ const SERVICES: Service[] = [
     icon: "local_florist",
     shortDesc: "Vibrant and seasonal floral arrangements for events or daily aesthetics.",
     longDesc: "Bring color and fragrance to your space with our custom floral displays. We source the freshest seasonal blooms to create stunning arrangements that elevate any environment.",
-    images: ["/images/fresh_floral_display.png"],
+    images: [
+      "/images/floral-display/floral-display-1.jpeg",
+      "/images/floral-display/floral-display-2.jpeg"
+    ],
     color: "high",
     gridSpan: "md:col-span-4 lg:col-span-3",
   },

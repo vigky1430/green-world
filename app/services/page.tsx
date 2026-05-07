@@ -13,7 +13,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <header className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover brightness-[0.4]" alt="panoramic view of a perfectly manicured luxury estate garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABvEuMf1o1sh2wkOibWcTZZN0tNJuESecHMS1wYuYYb2xcn0Q8T5x08eUiOhwZ7oub2JamLH7JcHc60OyNwxsVygtmbAvKgOJxZMVYhO-k38gWKxxC-Rn5uQ6scga9__rgVIxcsRQPVS_imVTcvYM38CEbRH-j6n4IyrZQCa1uRQMTE59hT-bR98yMvioIMTYsghmI017kXa88K6Ty99qWGGcCOjRX8gLgRjvhCqNsyRt3onT6Ta0MTnVB7-b2j8Al-GJq9NJDl6o" />
+          <img className="w-full h-full object-cover brightness-[0.4]" alt="panoramic view of a perfectly manicured luxury estate garden" src="/images/hydro-culture/hydro-culture-1.jpeg" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
           <span className="inline-block py-1 px-4 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-bold mb-6 tracking-wider uppercase">Our Expertise</span>

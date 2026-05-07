@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           </div>
           <div className="w-full md:w-1/2 relative">
             <div className="aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low relative">
-              <img alt="Architectural garden with precise stone pathways and lush structural planting" className="object-cover w-full h-full p-1 rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ0W475DRESrxl6ArokrX9VspOZGywkBViWeUmWIQJGbAFepDRYqmNvEHMOADwEY0rR85G2S2mi8-IF8BL0pxb5KQrmGvweu45Mtzt-s742EbQxR8Jb5RgFlt_ehC0UwKVG8R6He8WbYigcXXf69PQK09LTu8ESdNvCIeKxdiQjCSp0tFDrDGneBAPVv90VnaO7lc3rQAdDp1QAY5SzSxH2MyTxc97WES2Ta9jFhIA8yUkRkrVWET-2jkpp_AZtVvGE6Iuac_rgIU" />
+              <img alt="Architectural garden with precise stone pathways and lush structural planting" className="object-cover w-full h-full p-1 rounded-xl" src="/images/hydro-culture/hydro-culture-4.jpeg" />
             </div>
           </div>
         </div>

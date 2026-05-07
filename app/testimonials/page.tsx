@@ -157,9 +157,9 @@ export default async function TestimonialsPage() {
           <img
             alt="lush landscaped residential garden with stone paths, vibrant manicured green grass, and ornamental shrubs in soft afternoon sunlight"
             className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQf7novEdpfqoKx2NEKLby040HSIvRqU1on51eagqGTw8msfgD9Fhsf5wCQJHnFuV-2rOtudryscruR24bpUWPOtctRqw21G47vsco11JZNDO4M0x-z1mAKtbaCH0GxOmDK5Cmy_7KkilwohhYoAYDXHx6xAhPwMsOHlxwbabJ-u_uoqRKzfZikW-NqArJZJlP3I3eHfZR_iu4QkgXnSkN6y8-c7CAb73PYjKMxbJniL4jRrJ3-D4ac-cXtzajzk61QhgW6zALp_Y"
+            src="/images/WhatsApp Image 2026-05-03 at 6.54.33 PM.jpeg"
           />
-          <div className="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-primary/40 backdrop-blur-[6px]"></div>
         </div>
         <div className="relative z-10 text-center px-6 max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4">

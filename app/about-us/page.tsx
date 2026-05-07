@@ -67,7 +67,7 @@ export default function AboutUsPage() {
               <span className="material-symbols-outlined text-4xl mb-6">flag</span>
               <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-xl leading-relaxed opacity-90">
-                To redefine the relationship between urban living and nature through precision landscaping and ecological restoration. We strive to provide every client with a sanctuary that supports local biodiversity while offering unparalleled aesthetic value.
+                To satisfy every client by transforming their landscape to look like a natural paradise. We believe in being frank about what works for your space, because the right solution is what turns expectations into reality.
               </p>
             </div>
             <div className="mt-12 flex items-center gap-8">
@@ -87,7 +87,7 @@ export default function AboutUsPage() {
             <span className="material-symbols-outlined text-4xl text-primary mb-6">visibility</span>
             <h2 className="text-4xl font-bold mb-6 text-on-surface">Our Vision</h2>
             <p className="text-lg leading-relaxed text-on-surface-variant mb-6">
-              A world where every landscape serves as a carbon sink and a haven for wildlife.
+              We envision making a future of greenery for every vision and crafting landscapes that become a lifestyle.
             </p>
             <ul className="space-y-4 mt-auto">
               <li className="flex items-center gap-3">
@@ -177,7 +177,7 @@ export default function AboutUsPage() {
             </div>
           </div>
           <div className="md:w-1/2 min-h-[400px] relative">
-            <img className="absolute inset-0 w-full h-full object-cover rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none" alt="vibrant garden showing healthy soil, blooming wildflowers, and a modern birdbath attracting local birds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_0XRkjzwbdmcRH6GoHvPnVReVKCa9CZE3G5woSQ039mIjwVfp_8SwPal6R9SsBcAH3Ktizt2RQDU2SKbZONCnH_VGKLXckYP0fav7uP1x1WAYMYeGeFOhUIfjYGvhYGyH-8x0FEuQVn4fPKv8vn-A5YLeg1-spur3U4ofXZSMZCZQBGc3LLDKV3ApnVV3_RBDtkPviYYle3zn6ro3-6cLV03TF6M8DYz9AsL7FI54Lbjff5ptGUwRqddUzPOQBHKdqg43ZRcXCB0" />
+            <img className="absolute inset-0 w-full h-full object-cover rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none" alt="vibrant garden showing healthy soil, blooming wildflowers, and a modern birdbath attracting local birds" src="/images/floral-display/floral-display-1.jpeg" />
           </div>
         </div>
       </section>
