@@ -24,9 +24,6 @@ const SERVICES: Service[] = [
     longDesc: "Our comprehensive maintenance programs are designed to keep your landscape in peak condition throughout the year. We combine traditional horticultural wisdom with modern soil science to ensure your plants thrive.",
     features: ["Seasonal Cleanup", "Turf Management", "Soil Enrichment", "General Upkeep"],
     images: [
-      "/images/landscape-maintanance/landscape-maintanance-1.jpeg",
-      "/images/landscape-maintanance/landscape-maintanance-2.jpeg",
-      "/images/landscape-maintanance/landscape-maintanance-3.jpeg",
       "/images/landscape-maintanance/landscape-maintanance-4.jpeg",
       "/images/landscape-maintanance/landscape-maintanance-5.jpeg"
     ],
@@ -41,7 +38,6 @@ const SERVICES: Service[] = [
     longDesc: "From initial concept to final construction, we handle every aspect of your landscape transformation. Our design-build approach ensures that the original vision is preserved while maintaining strict quality control through the build phase.",
     images: [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCQDfCgM1JaVHIVN66bpdm_af9Ddrsi6sOuqwC2sNT_lSQo5_-jDBM-VslDrSRONMOGTOJdIhvOVyfk5cisEsTea204GphzXKI-iBTWY8Wi0sYr9l5WxyU2TfIBB9qIy79mZGAxsIVI1ndRr6XvEx-oacgEZxwes707DWdUF3sEuorDDjhzIwT18QhuNuUePhPC4EhDb672XP-1YerFAEL0vYId1Uta5EVcamv0hnxxQ11PVhzTx9zQ8Iugo9rSBCBArRwugoqnFe0",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDQ0W475DRESrxl6ArokrX9VspOZGywkBViWeUmWIQJGbAFepDRYqmNvEHMOADwEY0rR85G2S2mi8-IF8BL0pxb5KQrmGvweu45Mtzt-s742EbQxR8Jb5RgFlt_ehC0UwKVG8R6He8WbYigcXXf69PQK09LTu8ESdNvCIeKxdiQjCSp0tFDrDGneBAPVv90VnaO7lc3rQAdDp1QAY5SzSxH2MyTxc97WES2Ta9jFhIA8yUkRkrVWET-2jkpp_AZtVvGE6Iuac_rgIU"
     ],
     color: "primary",
     gridSpan: "md:col-span-4 lg:col-span-4",
@@ -105,16 +101,6 @@ const SERVICES: Service[] = [
       "/images/hydro-culture/hydro-culture-1.jpeg",
       "/images/hydro-culture/hydro-culture-2.jpeg",
       "/images/hydro-culture/hydro-culture-3.jpeg",
-      "/images/hydro-culture/hydro-culture-4.jpeg",
-      "/images/hydro-culture/hydro-culture-5.jpeg",
-      "/images/hydro-culture/hydro-culture-6.jpeg",
-      "/images/hydro-culture/hydro-culture-7.jpeg",
-      "/images/hydro-culture/hydro-culture-8.jpeg",
-      "/images/hydro-culture/hydro-culture-9.jpeg",
-      "/images/hydro-culture/hydro-culture-10.jpeg",
-      "/images/hydro-culture/hydro-culture-11.jpeg",
-      "/images/hydro-culture/hydro-culture-12.jpeg",
-      "/images/hydro-culture/hydro-culture-13.jpeg"
     ],
     color: "high",
     gridSpan: "md:col-span-4 lg:col-span-3",

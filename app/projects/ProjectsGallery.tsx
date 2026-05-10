@@ -14,77 +14,77 @@ type Project = {
 const CATEGORIES = [
   "All",
   "Landscape maintenance",
-  "Landscape Design and Build works",
+  // "Landscape Design and Build works",
   "Grass and Tree cutting Services",
-  "Water Features Installation",
-  "Artificial Turf Service",
+  // "Water Features Installation",
+  // "Artificial Turf Service",
   "Hydroculture Service",
-  "Irrigation System Installation",
+  // "Irrigation System Installation",
   "Fresh Flowers Floral Display",
-  "Live and Artificial Green Wall Installation",
-  "Construction Works",
+  // "Live and Artificial Green Wall Installation",
+  // "Construction Works",
 ];
 
 const PROJECTS: Project[] = [
-  {
-    id: "p1",
-    title: "Marina Bay Penthouse",
-    description: "A high-altitude sanctuary blending sleek stone surfaces with resilient, structural flora to withstand urban elements.",
-    category: "Landscape Design and Build works",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCsHkN3eGk33ruFuoway9UwYh_5b0LLuArohy7kbTVQBop935qvvzCHdtHCIVlZGwyz749Wlb9mwLFYPLeQs_gvdqHh72m_H6-tZOo1aexnok9C5hivR5tzmY_EN1J0hKZaTxjXKXMrj5xY5nxeIyGkb10maqneOxbSkD5ykPp5B_e8EfcdC58mor6y2M7J37BHbVXbOc9MBV2SYJcogeJMjSM7QFjXSOvri4cPBgBBlgZrz-p_YDPyr9q9sKrIYGhlP5wwKYYWh3w",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDQ0W475DRESrxl6ArokrX9VspOZGywkBViWeUmWIQJGbAFepDRYqmNvEHMOADwEY0rR85G2S2mi8-IF8BL0pxb5KQrmGvweu45Mtzt-s742EbQxR8Jb5RgFlt_ehC0UwKVG8R6He8WbYigcXXf69PQK09LTu8ESdNvCIeKxdiQjCSp0tFDrDGneBAPVv90VnaO7lc3rQAdDp1QAY5SzSxH2MyTxc97WES2Ta9jFhIA8yUkRkrVWET-2jkpp_AZtVvGE6Iuac_rgIU",
-    ],
-  },
-  {
-    id: "p2",
-    title: "Apex Tech Campus",
-    description: "A reflective courtyard designed to foster focus and calm amidst a bustling corporate environment.",
-    category: "Water Features Installation",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCPvTrNQ81wFG52LunCHnNn5G45oEWQWAxfKh9atNM5WGvMatzahpA30fVzeLAH2xKOtFyxLHjTm_nxSijI6WcJYSTI6No17-Pgzl9t71qa7sxxi39Sm5a7BuNv99nUn57gUW3oRV4W8CvSginQ76Yn0kZZRenXs8MM73zFk-5yTi_Xl8d_cuxH08hG4mmVltrxsjV1Dg8YWMScFw4PNrodZJ1oz-H_rXqWg5TneXGO_ucwJV3NxfiM798Kq8g6mbDvinDNAItsmow",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCv-b2STqB-GgpwEd7inlkOHmDDdwk9_3pa3HVNNMSjSOBN1d7M3Xgl7s9QV7lbD36AmGDPq-P2YVfMgTUtM-LWvEi9jHuFAetpjAZ3s8J4Rfm1ZnwRS921EAF3fsMUGGgz8H-cfOUoXJpPTjYX2w1Th-OP9ulcUjuOepMZf_Je-9OUiKoT1C8svIFX0O_l4YdSMdTy68sL5xUyrghDbZCvfzFK2UOozjYy__m8fyS60tz3K_WABWMCXkXZH1i4MocKymv86wA4GZk",
-    ],
-  },
-  {
-    id: "p3",
-    title: "The Verdant Atrium",
-    description: "A three-story living wall that acts as the biological lungs for a premier downtown commercial tower.",
-    category: "Live and Artificial Green Wall Installation",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBgph6UkkcfN9rU_vYTeRtGpKohjHXqVRSVmAdp2eFlAGnrP_k5NuOIPHtLYzfDQscbZav-MJDpCBHXqql4oKmw3iaBdrv6Uv6hElE-LZ3sl7Vkx6Ch2sLHdyeqMKO1NEPYBel7jCps7c4tH8iBVPEF70fHyE-hEa_KM9aWFzaxi-XBoMzO4F25BR5zIsFUCvyQ0l1Al_ViBdiYESiFDjwOin8sHWn5OlyVhtA-Z2Bfk6P3trv4rB6dy5IBs2dEKS9E2KA-Tx7Vc8A",
-      "/images/green_wall_installation.png",
-    ],
-  },
-  {
-    id: "p4",
-    title: "Echo Canyon Retreat",
-    description: "Embracing the arid climate with a zero-water design that utilizes native structural succulents and architectural concrete forms.",
-    category: "Construction Works",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDkW19pTePcyUS8RCygUMqqs-L_DYlfCCXskgfNuMGgpIOj73euoqLVZ0-ni7KPPtW_WhhAWukgCyQI9tl0t5l_HgYaAG--aly_KbHDHQh6DrYPHzGrK3ZQBgEmnzXZ9FH8zkqCJ9cR6mIWsrNusggyL4uubhwQ_G0E-CGsmyP-r2dzN5zjTdHZaGUsXcvoU9eGPkwKozvZsHl2DJnZkZOKqG4uYAq4ALk8b0LPKr41_j5l2dm599bq6XjdktpwTr3j0CwnQb1c300",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCqGNaiTU37_R6Qx-C52zHsH8TK9chdCrKCY1ma7MLGnehZTOG53u2dLUGACYxlsePm9Q4ZwDfw1FI4HR7s_YxTNszIsXjBj845pDphmX5olK9k4LaSRhf9cHHUKl6J9l_dpnFeG_vfG5r41OH5nKgDQgy2cGIlklgps5HX0dnVIKjE3p83O0yM972QV77apEHeSJlDQr6nwbJg_qntHnmNRvIWOcG_j7atgQvCJD2rEuI4vWsIhgU74wfvu9w7eA_mTd-tZbAYh9I",
-    ],
-  },
-  {
-    id: "p5",
-    title: "Estate Turf Renewal",
-    description: "A complete overhaul using premium artificial turf for a perfectly green, maintenance-free lawn year-round.",
-    category: "Artificial Turf Service",
-    images: [
-      "/images/artificial_turf.png",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAFvZGF6S2EKpIL5NWbiaTmGY-bLhCdTlcEv0jQdLk1w0xr9W5BzDGndEIBznkmO-vMIcIqfYpETfvoZvlit0szSJsYbDZZpAxgLC3iG1hKmEVb6kBYfU2oILkPPF6RjFWKguLfAwHCjPLWq8XKDCueiVUTTmzLlxXeGP0X29tNfefF_lhr1jtIXSiNvgVqtEYRfRHj_Poz1yUBtfpp37ARQaG1srzYxM7U_sauMCzzUv4VUg7juWuIAmXBwxSCRa5vp6Yd79hBOaM",
-    ],
-  },
-  {
-    id: "p6",
-    title: "Smart Irrigation Overhaul",
-    description: "Upgrading a massive commercial property with the latest in water-efficient automated irrigation systems.",
-    category: "Irrigation System Installation",
-    images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDOdu5IlmQLrCPdZZ0hLDIZ9wisvMLmBXsTmHHmKCG5u_vitDZ5zL2D2Wxv3gg3bF3IL0SzAaNJm6OPFyL62thYWU2pKZsVQJSmdM6JPv_BLjoDqHv0GBE1jo3sTLdZN-BvcRdjAeKbA_FD48acn8f0Ue1mtwDQbVqk7D-0eq2KFwNoKTLypU-2Cb-WQ3F4QBPibyMigEZYsyWhWQj914jKsaEhAL-ysOmAankupRNfzsYqyT3nrQDd2X8R2_yyZU7DrT-zOiiLfdQ",
-    ],
-  },
+  // {
+  //   id: "p1",
+  //   title: "Marina Bay Penthouse",
+  //   description: "A high-altitude sanctuary blending sleek stone surfaces with resilient, structural flora to withstand urban elements.",
+  //   category: "Landscape Design and Build works",
+  //   images: [
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuCsHkN3eGk33ruFuoway9UwYh_5b0LLuArohy7kbTVQBop935qvvzCHdtHCIVlZGwyz749Wlb9mwLFYPLeQs_gvdqHh72m_H6-tZOo1aexnok9C5hivR5tzmY_EN1J0hKZaTxjXKXMrj5xY5nxeIyGkb10maqneOxbSkD5ykPp5B_e8EfcdC58mor6y2M7J37BHbVXbOc9MBV2SYJcogeJMjSM7QFjXSOvri4cPBgBBlgZrz-p_YDPyr9q9sKrIYGhlP5wwKYYWh3w",
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuDQ0W475DRESrxl6ArokrX9VspOZGywkBViWeUmWIQJGbAFepDRYqmNvEHMOADwEY0rR85G2S2mi8-IF8BL0pxb5KQrmGvweu45Mtzt-s742EbQxR8Jb5RgFlt_ehC0UwKVG8R6He8WbYigcXXf69PQK09LTu8ESdNvCIeKxdiQjCSp0tFDrDGneBAPVv90VnaO7lc3rQAdDp1QAY5SzSxH2MyTxc97WES2Ta9jFhIA8yUkRkrVWET-2jkpp_AZtVvGE6Iuac_rgIU",
+  //   ],
+  // },
+  // {
+  //   id: "p2",
+  //   title: "Apex Tech Campus",
+  //   description: "A reflective courtyard designed to foster focus and calm amidst a bustling corporate environment.",
+  //   category: "Water Features Installation",
+  //   images: [
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuCPvTrNQ81wFG52LunCHnNn5G45oEWQWAxfKh9atNM5WGvMatzahpA30fVzeLAH2xKOtFyxLHjTm_nxSijI6WcJYSTI6No17-Pgzl9t71qa7sxxi39Sm5a7BuNv99nUn57gUW3oRV4W8CvSginQ76Yn0kZZRenXs8MM73zFk-5yTi_Xl8d_cuxH08hG4mmVltrxsjV1Dg8YWMScFw4PNrodZJ1oz-H_rXqWg5TneXGO_ucwJV3NxfiM798Kq8g6mbDvinDNAItsmow",
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuCv-b2STqB-GgpwEd7inlkOHmDDdwk9_3pa3HVNNMSjSOBN1d7M3Xgl7s9QV7lbD36AmGDPq-P2YVfMgTUtM-LWvEi9jHuFAetpjAZ3s8J4Rfm1ZnwRS921EAF3fsMUGGgz8H-cfOUoXJpPTjYX2w1Th-OP9ulcUjuOepMZf_Je-9OUiKoT1C8svIFX0O_l4YdSMdTy68sL5xUyrghDbZCvfzFK2UOozjYy__m8fyS60tz3K_WABWMCXkXZH1i4MocKymv86wA4GZk",
+  //   ],
+  // },
+  // {
+  //   id: "p3",
+  //   title: "The Verdant Atrium",
+  //   description: "A three-story living wall that acts as the biological lungs for a premier downtown commercial tower.",
+  //   category: "Live and Artificial Green Wall Installation",
+  //   images: [
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuBgph6UkkcfN9rU_vYTeRtGpKohjHXqVRSVmAdp2eFlAGnrP_k5NuOIPHtLYzfDQscbZav-MJDpCBHXqql4oKmw3iaBdrv6Uv6hElE-LZ3sl7Vkx6Ch2sLHdyeqMKO1NEPYBel7jCps7c4tH8iBVPEF70fHyE-hEa_KM9aWFzaxi-XBoMzO4F25BR5zIsFUCvyQ0l1Al_ViBdiYESiFDjwOin8sHWn5OlyVhtA-Z2Bfk6P3trv4rB6dy5IBs2dEKS9E2KA-Tx7Vc8A",
+  //     "/images/green_wall_installation.png",
+  //   ],
+  // },
+  // {
+  //   id: "p4",
+  //   title: "Echo Canyon Retreat",
+  //   description: "Embracing the arid climate with a zero-water design that utilizes native structural succulents and architectural concrete forms.",
+  //   category: "Construction Works",
+  //   images: [
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuDkW19pTePcyUS8RCygUMqqs-L_DYlfCCXskgfNuMGgpIOj73euoqLVZ0-ni7KPPtW_WhhAWukgCyQI9tl0t5l_HgYaAG--aly_KbHDHQh6DrYPHzGrK3ZQBgEmnzXZ9FH8zkqCJ9cR6mIWsrNusggyL4uubhwQ_G0E-CGsmyP-r2dzN5zjTdHZaGUsXcvoU9eGPkwKozvZsHl2DJnZkZOKqG4uYAq4ALk8b0LPKr41_j5l2dm599bq6XjdktpwTr3j0CwnQb1c300",
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuCqGNaiTU37_R6Qx-C52zHsH8TK9chdCrKCY1ma7MLGnehZTOG53u2dLUGACYxlsePm9Q4ZwDfw1FI4HR7s_YxTNszIsXjBj845pDphmX5olK9k4LaSRhf9cHHUKl6J9l_dpnFeG_vfG5r41OH5nKgDQgy2cGIlklgps5HX0dnVIKjE3p83O0yM972QV77apEHeSJlDQr6nwbJg_qntHnmNRvIWOcG_j7atgQvCJD2rEuI4vWsIhgU74wfvu9w7eA_mTd-tZbAYh9I",
+  //   ],
+  // },
+  // {
+  //   id: "p5",
+  //   title: "Estate Turf Renewal",
+  //   description: "A complete overhaul using premium artificial turf for a perfectly green, maintenance-free lawn year-round.",
+  //   category: "Artificial Turf Service",
+  //   images: [
+  //     "/images/artificial_turf.png",
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuAFvZGF6S2EKpIL5NWbiaTmGY-bLhCdTlcEv0jQdLk1w0xr9W5BzDGndEIBznkmO-vMIcIqfYpETfvoZvlit0szSJsYbDZZpAxgLC3iG1hKmEVb6kBYfU2oILkPPF6RjFWKguLfAwHCjPLWq8XKDCueiVUTTmzLlxXeGP0X29tNfefF_lhr1jtIXSiNvgVqtEYRfRHj_Poz1yUBtfpp37ARQaG1srzYxM7U_sauMCzzUv4VUg7juWuIAmXBwxSCRa5vp6Yd79hBOaM",
+  //   ],
+  // },
+  // {
+  //   id: "p6",
+  //   title: "Smart Irrigation Overhaul",
+  //   description: "Upgrading a massive commercial property with the latest in water-efficient automated irrigation systems.",
+  //   category: "Irrigation System Installation",
+  //   images: [
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuDOdu5IlmQLrCPdZZ0hLDIZ9wisvMLmBXsTmHHmKCG5u_vitDZ5zL2D2Wxv3gg3bF3IL0SzAaNJm6OPFyL62thYWU2pKZsVQJSmdM6JPv_BLjoDqHv0GBE1jo3sTLdZN-BvcRdjAeKbA_FD48acn8f0Ue1mtwDQbVqk7D-0eq2KFwNoKTLypU-2Cb-WQ3F4QBPibyMigEZYsyWhWQj914jKsaEhAL-ysOmAankupRNfzsYqyT3nrQDd2X8R2_yyZU7DrT-zOiiLfdQ",
+  //   ],
+  // },
   {
     id: "p7",
     title: "Seasonal Floral Design",

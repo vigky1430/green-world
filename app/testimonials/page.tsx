@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Testimonials | Green World Landscaping",
@@ -173,17 +174,39 @@ export default async function TestimonialsPage() {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
         {testimonials.length === 0 ? (
-          <div className="text-center py-20 text-on-surface-variant">
-            <span className="material-symbols-outlined text-6xl mb-4 block opacity-40">
-              rate_review
-            </span>
-            <p className="text-xl font-medium">No featured testimonials yet.</p>
-            <p className="text-sm mt-2 opacity-60">
-              Mark a row as <strong>Featured on Website = TRUE</strong> in the
-              Google Sheet to display it here.
+          <div className="text-center py-16 px-6 bg-surface-container-lowest rounded-3xl border border-outline-variant/30 shadow-sm max-w-2xl mx-auto">
+            <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/5 text-primary">
+              <span className="material-symbols-outlined text-4xl">
+                construction
+              </span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-headline font-extrabold text-on-surface mb-4">
+              Exciting Projects in Progress
+            </h2>
+            <p className="text-lg text-on-surface-variant max-w-md mx-auto leading-relaxed">
+              We are currently working on many beautiful landscaping projects. We
+              look forward to showcasing our clients&apos; reviews and results
+              with you in the near future!
             </p>
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+              <Link
+                href="/projects"
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-bold hover:bg-primary/90 transition-all shadow-md hover:shadow-lg active:scale-95"
+              >
+                View Our Portfolio
+                <span className="material-symbols-outlined ml-2 text-sm">
+                  arrow_forward
+                </span>
+              </Link>
+              <Link
+                href="/contact-us"
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full border-2 border-primary text-primary font-bold hover:bg-primary/5 transition-all active:scale-95"
+              >
+                Get a Quote
+              </Link>
+            </div>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

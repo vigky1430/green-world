@@ -33,7 +33,7 @@ export default function ProjectsPage() {
       <ProjectsGallery />
 
       {/* Before & After Transformation */}
-      <section className="bg-surface-container-low py-16 md:py-24 mb-32">
+      {/* <section className="bg-surface-container-low py-16 md:py-24 mb-32">
         <div className="max-w-screen-2xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-headline text-[1.75rem] font-bold text-on-surface mb-4">Structural Transformation</h2>
@@ -52,7 +52,7 @@ export default function ProjectsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="px-6 max-w-3xl mx-auto text-center mb-16">
