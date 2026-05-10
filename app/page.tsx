@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: "Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert design, meticulous maintenance, and organic care for your environment.",
 };
 
+import ImageSlideshow from "./components/ImageSlideshow";
+
 export default function HomePage() {
   const startDate = new Date("2024-11-25");
   const today = new Date();
@@ -18,6 +20,13 @@ export default function HomePage() {
     yearsExperience--;
   }
   yearsExperience = Math.max(0, yearsExperience);
+
+  const workingImages = [
+    "/images/working images/working-image-1.jpeg",
+    "/images/working images/working-image-2.jpeg",
+    "/images/working images/working-image-3.jpeg",
+    "/images/working images/working-image-4.jpeg",
+  ];
 
   return (
     <>
@@ -98,7 +107,7 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-              <Link href="/contact-us">
+              <Link href="/services">
                   <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="large scale landscape architectural project with stone paths and diverse ornamental plants" src="/images/WhatsApp Image 2026-05-03 at 6.54.33 PM.jpeg" />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-8 text-on-primary">
@@ -108,7 +117,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-              <Link href="/contact-us">
+              <Link href="/services">
                   <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="professional gardener trimming hedges with precision tools in a formal garden" src="/images/WhatsApp Image 2026-05-03 at 7.03.52 PM.jpeg" />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-8 text-on-primary">
@@ -118,22 +127,22 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-              <Link href="/contact-us">
-                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="automated irrigation system spraying water over a lush green golf course at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOdu5IlmQLrCPdZZ0hLDIZ9wisvMLmBXsTmHHmKCG5u_vitDZ5zL2D2Wxv3gg3bF3IL0SzAaNJm6OPFyL62thYWU2pKZsVQJSmdM6JPv_BLjoDqHv0GBE1jo3sTLdZN-BvcRdjAeKbA_FD48acn8f0Ue1mtwDQbVqk7D-0eq2KFwNoKTLypU-2Cb-WQ3F4QBPibyMigEZYsyWhWQj914jKsaEhAL-ysOmAankupRNfzsYqyT3nrQDd2X8R2_yyZU7DrT-zOiiLfdQ" />
+              <Link href="/services">
+                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="vibrant and seasonal fresh flower floral display arrangement" src="/images/floral-display/floral-display-1.jpeg" />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-8 text-on-primary">
-                    <h3 className="text-2xl font-bold mb-2">Irrigation System Installation</h3>
-                    <p className="text-on-primary-container/90">Water-efficient systems designed for sustainability.</p>
+                    <h3 className="text-2xl font-bold mb-2">Fresh Flower Floral Display</h3>
+                    <p className="text-on-primary-container/90">Vibrant and seasonal floral arrangements for events or daily aesthetics.</p>
                   </div>
               </Link>
             </div>
             <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container h-[400px]">
-              <Link href="/contact-us">
-                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="modern outdoor living area with a stone fire pit and built-in wooden seating surrounded by plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39ZNE7zbpuu_uAQvxBACaf15O363tefCXVm6eKnUyrFF-_MOQ8rN5-fpOeYTywtNdwYIWz7ftWyhloWI4NLBfrA6ptXgkBtRAD1JvjZRW6WEY3zn6W0tiSL0cWs_L_jwyo60xJP5Zvyvdu04poVEQsBAvb-tgGr617KdhrmY6_JIGTYEmPCrbQti6Gdgq3vGXM7ihKpUUj8QFNzceIN_YSJK2F8enDos1c1UL_pMEXQ8DjEDTliQEaYmdvbe3cat3WcR_OiOiqFI" />
+              <Link href="/services">
+                  <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="modern hydroculture planting solution for indoor environment" src="/images/hydro-culture/hydro-culture-1.jpeg" />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-8 text-on-primary">
-                    <h3 className="text-3xl font-bold mb-2">Construction Works</h3>
-                    <p className="text-on-primary-container/90 max-w-md">Beautiful stone work, patios, retaining walls, and custom hardscaping that last a lifetime.</p>
+                    <h3 className="text-3xl font-bold mb-2">Hydroculture Service</h3>
+                    <p className="text-on-primary-container/90 max-w-md">Soil-less planting solutions for indoor and unique outdoor spaces.</p>
                   </div>
               </Link>
             </div>
@@ -145,8 +154,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden">
-                <img className="w-full h-full object-cover" alt="team of landscaping professionals discussing a site plan in a sunny garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDteqB5jUi1_-jUEC4_C6KKf7BorZtUh6BA173ZyFMQmYVRnC7vNQ1G7xgq09oYkvjI2jeiGRIdxnICcFIqwS-sKqbkd_vmek_56vXhVx8_n7ruJNeXQeknpWWXPVHqqbeUqEFqE8myvhRbEv1pl9QBCEfBDVkgESaMJVeTYE1BQe3vE5XAqrTlXiQ-T_bKWdO7HhOF36zGMC6V2dttWr_Z4HWIBs3_OA8zA1Jy-dPEcQWVvXbpTcBI2Q18VK7gLcMPBbTexB8Zjf8" />
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+                <ImageSlideshow images={workingImages} />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary text-on-primary p-8 rounded-2xl shadow-xl max-w-xs">
                 <p className="text-lg italic">"We don't just plant trees, we grow ecosystems that inspire the soul."</p>

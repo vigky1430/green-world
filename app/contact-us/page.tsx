@@ -33,7 +33,7 @@ export default function ContactUsPage() {
             <div className="relative z-10 flex flex-col md:flex-row gap-6">
               {/* <img alt="Professional portrait of a friendly manager named Raja" className="w-24 h-24 rounded-full object-cover border-4 border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc8v_Fp4xJ1h2HVwG75bg17pOese199vEMBnHgtblKSsPyWZqo5eXM8vrzkcy0eEGnZKYaSd00KEJvyG1NrcZF-kHbwwlq6ibLgFn22OgRQ-hEUZs5ONZqjw-B5y26Qo7dr3qwh-UUP7eB_HKrJqfhWunhKfmyjY1lmGqPUDSFZP47MA8xAU4QhmemIizheeeqmCzdU0jFQBHbhg9v_JnEjyfujWlRYZq9WQAF4TTTATU63EXdo3Q_8sD2fvz2lbgPPBdGDmfP2sA" /> */}
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-on-primary-container/80 mb-1 block">Direct Liaison</span>
+                {/* <span className="text-xs font-bold uppercase tracking-widest text-on-primary-container/80 mb-1 block">Direct Liaison</span> */}
                 <h3 className="font-headline text-2xl font-extrabold mb-1">Raja</h3>
                 <p className="text-sm font-medium opacity-90 mb-4">Operations Manager</p>
                 <div className="flex flex-col gap-2">
