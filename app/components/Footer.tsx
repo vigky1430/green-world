@@ -10,15 +10,15 @@ export default function Footer() {
           </div>
           <p className="text-neutral-500 dark:text-neutral-400 font-body">Professional landscaping services dedicated to sustainable beauty and architectural excellence.</p>
           <div className="flex gap-4">
-            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">
+            <Link href="/" className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer" aria-label="Home">
               <span className="material-symbols-outlined">public</span>
-            </div>
-            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">
+            </Link>
+            <a href="mailto:gogreenworld03@gmail.com" className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer" aria-label="Email Us">
               <span className="material-symbols-outlined">mail</span>
-            </div>
-            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">
+            </a>
+            <a href="tel:+6592434946" className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer" aria-label="Call Us">
               <span className="material-symbols-outlined">phone_in_talk</span>
-            </div>
+            </a>
           </div>
         </div>
         <div>
@@ -52,7 +52,7 @@ export default function Footer() {
               title="Green World Landscaping Office Location"
             />
           </div>
-          <p className="text-neutral-500 dark:text-neutral-400 text-sm">32 Marsiling Dr, Singapore 730032</p>
+          <p className="text-neutral-500 dark:text-neutral-400 text-sm">10 Admiralty Street #01-43, Singapore 757695.</p>
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-8 py-8 border-t border-neutral-200 dark:border-neutral-800 text-center md:text-left">

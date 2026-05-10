@@ -37,13 +37,13 @@ export default function ContactUsPage() {
                 <h3 className="font-headline text-2xl font-extrabold mb-1">Raja</h3>
                 <p className="text-sm font-medium opacity-90 mb-4">Operations Manager</p>
                 <div className="flex flex-col gap-2">
-                  <a className="flex items-center gap-2 text-sm hover:underline" href="tel:+15551234567">
+                  <a className="flex items-center gap-2 text-sm hover:underline" href="tel:+6592434946">
                     <span className="material-symbols-outlined text-lg">call</span>
-                    (555) 123-4567
+                    +65 92434946
                   </a>
-                  <a className="flex items-center gap-2 text-sm hover:underline" href="mailto:raja@greenworld.com">
+                  <a className="flex items-center gap-2 text-sm hover:underline" href="mailto:gogreenworld03@gmail.com">
                     <span className="material-symbols-outlined text-lg">mail</span>
-                    raja@greenworld.com
+                    gogreenworld03@gmail.com
                   </a>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function ContactUsPage() {
                 </div>
                 <div>
                   <h4 className="font-headline font-bold text-on-surface">Office Address</h4>
-                  <p className="text-on-surface-variant leading-relaxed">32 Marsiling Dr,<br />Singapore 730032</p>
+                  <p className="text-on-surface-variant leading-relaxed">10 Admiralty Street #01-43,<br />Singapore 757695.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
