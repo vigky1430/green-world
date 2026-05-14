@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ProjectsGallery from "./ProjectsGallery";
 
-const PAGE_URL = "https://www.greenworld.com.sg/projects";
+const PAGE_URL = "https://www.greenworld.sg/projects";
 
 export const metadata: Metadata = {
   title: "Our Projects & Portfolio | GreenWorld Landscaping",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-4.jpeg",
+        url: "https://www.greenworld.sg/images/hydro-culture/hydro-culture-4.jpeg",
         width: 1200,
         height: 630,
         alt: "GreenWorld Landscaping project portfolio – architectural garden designs",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Our Projects & Portfolio | GreenWorld Landscaping",
     description:
       "Browse GreenWorld Landscaping's portfolio — architectural gardens, hydroculture installations, and floral displays.",
-    images: ["https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-4.jpeg"],
+    images: ["https://www.greenworld.sg/images/hydro-culture/hydro-culture-4.jpeg"],
   },
 };
 

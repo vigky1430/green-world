@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
-const BASE_URL = "https://www.greenworld.com.sg";
+const BASE_URL = "https://www.greenworld.sg";
 
 export const metadata: Metadata = {
   title: "GreenWorld Landscaping Singapore | Garden Design & Maintenance",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     images: [
       {
-        url: "https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg",
+        url: "https://www.greenworld.sg/images/hydro-culture/hydro-culture-1.jpeg",
         width: 1200,
         height: 630,
         alt: "GreenWorld Landscaping Singapore – Breathtaking Garden Designs",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "GreenWorld Landscaping Singapore | Garden Design & Maintenance",
     description:
       "Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert landscape design, garden maintenance, hydroculture, and floral displays.",
-    images: ["https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg"],
+    images: ["https://www.greenworld.sg/images/hydro-culture/hydro-culture-1.jpeg"],
   },
 };
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ServicesGallery } from "./ServicesList";
 
-const PAGE_URL = "https://www.greenworld.com.sg/services";
+const PAGE_URL = "https://www.greenworld.sg/services";
 
 export const metadata: Metadata = {
   title: "Landscaping Services in Singapore | Garden Design, Hydroculture & More",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg",
+        url: "https://www.greenworld.sg/images/hydro-culture/hydro-culture-1.jpeg",
         width: 1200,
         height: 630,
         alt: "Professional landscaping services by GreenWorld Landscaping Singapore",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Landscaping Services in Singapore | GreenWorld Landscaping",
     description:
       "Full-service landscaping in Singapore: design, maintenance, hydroculture, floral displays, tree planting, green walls, and artificial turf.",
-    images: ["https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg"],
+    images: ["https://www.greenworld.sg/images/hydro-culture/hydro-culture-1.jpeg"],
   },
 };
 

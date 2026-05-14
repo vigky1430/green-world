@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const PAGE_URL = "https://www.greenworld.com.sg/testimonials";
+const PAGE_URL = "https://www.greenworld.sg/testimonials";
 
 export const metadata: Metadata = {
   title: "Client Reviews & Testimonials | GreenWorld Landscaping",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "https://www.greenworld.com.sg/images/WhatsApp%20Image%202026-05-03%20at%206.54.33%20PM.jpeg",
+        url: "https://www.greenworld.sg/images/WhatsApp%20Image%202026-05-03%20at%206.54.33%20PM.jpeg",
         width: 1200,
         height: 630,
         alt: "Happy GreenWorld Landscaping clients enjoying their transformed garden",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Client Reviews & Testimonials | GreenWorld Landscaping",
     description:
       "Read genuine reviews from homeowners and businesses who have transformed their outdoor spaces with GreenWorld Landscaping.",
-    images: ["https://www.greenworld.com.sg/images/WhatsApp%20Image%202026-05-03%20at%206.54.33%20PM.jpeg"],
+    images: ["https://www.greenworld.sg/images/WhatsApp%20Image%202026-05-03%20at%206.54.33%20PM.jpeg"],
   },
 };
 

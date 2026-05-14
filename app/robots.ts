@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://www.greenworld.com.sg/sitemap.xml",
-    host: "https://www.greenworld.com.sg",
+    sitemap: "https://www.greenworld.sg/sitemap.xml",
+    host: "https://www.greenworld.sg",
   };
 }

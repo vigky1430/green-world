@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
-const PAGE_URL = "https://www.greenworld.com.sg/about-us";
+const PAGE_URL = "https://www.greenworld.sg/about-us";
 
 export const metadata: Metadata = {
   title: "About GreenWorld Landscaping | Sustainable Landscaping Company",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "https://www.greenworld.com.sg/images/WhatsApp%20Image%202026-05-03%20at%206.48.51%20PM.jpeg",
+        url: "https://www.greenworld.sg/images/WhatsApp%20Image%202026-05-03%20at%206.48.51%20PM.jpeg",
         width: 1200,
         height: 630,
         alt: "GreenWorld Landscaping team working on a sustainable garden project",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "About GreenWorld Landscaping | Sustainable Landscaping Company",
     description:
       "Learn about GreenWorld Landscaping — our mission to transform landscapes into natural paradises and our commitment to eco-friendly, sustainable outdoor spaces.",
-    images: ["https://www.greenworld.com.sg/images/WhatsApp%20Image%202026-05-03%20at%206.48.51%20PM.jpeg"],
+    images: ["https://www.greenworld.sg/images/WhatsApp%20Image%202026-05-03%20at%206.48.51%20PM.jpeg"],
   },
 };
 
