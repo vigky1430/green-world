@@ -1,9 +1,42 @@
 import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
 
+const PAGE_URL = "https://www.greenworld.com.sg/contact-us";
+
 export const metadata: Metadata = {
-  title: "Contact Us | Green World Landscaping",
-  description: "Get in touch with Green World Landscaping for your next project.",
+  title: "Contact GreenWorld Landscaping | Get a Free Quote",
+  description:
+    "Get in touch with GreenWorld Landscaping for a free consultation and quote. Call us at +65 9243 4946, email gogreenworld03@gmail.com, or visit us at 10 Admiralty Street, Singapore 757695.",
+  keywords: [
+    "contact GreenWorld Landscaping",
+    "landscaping quote",
+    "free landscape consultation",
+    "landscape design enquiry",
+    "landscaping company contact",
+  ],
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  openGraph: {
+    title: "Contact GreenWorld Landscaping | Get a Free Quote",
+    description:
+      "Get a free landscaping consultation and quote. Call +65 9243 4946 or visit us at 10 Admiralty Street, Singapore 757695.",
+    url: PAGE_URL,
+    images: [
+      {
+        url: "/images/home-hero-bg.webp",
+        width: 1200,
+        height: 630,
+        alt: "Contact GreenWorld Landscaping for a free garden consultation",
+      },
+    ],
+  },
+  twitter: {
+    title: "Contact GreenWorld Landscaping | Get a Free Quote",
+    description:
+      "Get a free landscaping consultation and quote. Call +65 9243 4946 or visit us at 10 Admiralty Street, Singapore 757695.",
+    images: ["/images/home-hero-bg.webp"],
+  },
 };
 
 export default function ContactUsPage() {

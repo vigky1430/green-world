@@ -2,9 +2,45 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
+const BASE_URL = "https://www.greenworld.com.sg";
+
 export const metadata: Metadata = {
-  title: "Green World Landscaping | Transform Your Vision",
-  description: "Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert design, meticulous maintenance, and organic care for your environment.",
+  title: "GreenWorld Landscaping Singapore | Garden Design & Maintenance",
+  description:
+    "Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert landscape design, garden maintenance, hydroculture, and floral displays in Singapore.",
+  keywords: [
+    "landscaping Singapore",
+    "garden design",
+    "landscape maintenance",
+    "hydroculture",
+    "floral display",
+    "green world landscaping",
+    "outdoor space transformation",
+    "sustainable landscaping",
+  ],
+  alternates: {
+    canonical: BASE_URL,
+  },
+  openGraph: {
+    title: "GreenWorld Landscaping Singapore | Garden Design & Maintenance",
+    description:
+      "Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert landscape design, garden maintenance, hydroculture, and floral displays in Singapore.",
+    url: BASE_URL,
+    images: [
+      {
+        url: "/images/home-hero-bg.webp",
+        width: 1200,
+        height: 630,
+        alt: "GreenWorld Landscaping Singapore – Breathtaking Garden Designs",
+      },
+    ],
+  },
+  twitter: {
+    title: "GreenWorld Landscaping Singapore | Garden Design & Maintenance",
+    description:
+      "Transforming ordinary outdoor spaces into breathtaking sustainable sanctuaries. Expert landscape design, garden maintenance, hydroculture, and floral displays.",
+    images: ["/images/home-hero-bg.webp"],
+  },
 };
 
 import ImageSlideshow from "./components/ImageSlideshow";

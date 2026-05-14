@@ -2,9 +2,44 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ProjectsGallery from "./ProjectsGallery";
 
+const PAGE_URL = "https://www.greenworld.com.sg/projects";
+
 export const metadata: Metadata = {
-  title: "Our Portfolio of Living Masterpieces | Green World Landscaping",
-  description: "Explore our collection of architectural landscapes where organic fluidity meets structural precision.",
+  title: "Our Projects & Portfolio | GreenWorld Landscaping",
+  description:
+    "Browse GreenWorld Landscaping's portfolio of completed projects. From architectural gardens to hydroculture installations and floral displays — see our living masterpieces.",
+  keywords: [
+    "landscaping portfolio Singapore",
+    "garden design projects",
+    "landscape project gallery",
+    "hydroculture installation",
+    "floral display project",
+    "completed landscape projects",
+    "green world landscaping portfolio",
+  ],
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  openGraph: {
+    title: "Our Projects & Portfolio | GreenWorld Landscaping",
+    description:
+      "Browse GreenWorld Landscaping's portfolio — architectural gardens, hydroculture installations, and floral displays.",
+    url: PAGE_URL,
+    images: [
+      {
+        url: "/images/hydro-culture/hydro-culture-4.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "GreenWorld Landscaping project portfolio – architectural garden designs",
+      },
+    ],
+  },
+  twitter: {
+    title: "Our Projects & Portfolio | GreenWorld Landscaping",
+    description:
+      "Browse GreenWorld Landscaping's portfolio — architectural gardens, hydroculture installations, and floral displays.",
+    images: ["/images/hydro-culture/hydro-culture-4.jpeg"],
+  },
 };
 
 export default function ProjectsPage() {

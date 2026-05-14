@@ -1,10 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const PAGE_URL = "https://www.greenworld.com.sg/testimonials";
+
 export const metadata: Metadata = {
-  title: "Testimonials | Green World Landscaping",
+  title: "Client Reviews & Testimonials | GreenWorld Landscaping",
   description:
-    "Hear from the homeowners and businesses we've helped transform into green paradises.",
+    "Read what our clients say about GreenWorld Landscaping. Genuine reviews from homeowners and businesses who have transformed their outdoor spaces with our expert landscaping services.",
+  keywords: [
+    "landscaping reviews Singapore",
+    "GreenWorld Landscaping testimonials",
+    "client reviews landscaping",
+    "garden design reviews",
+    "landscaping company testimonials",
+  ],
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  openGraph: {
+    title: "Client Reviews & Testimonials | GreenWorld Landscaping",
+    description:
+      "Read genuine reviews from homeowners and businesses who have transformed their outdoor spaces with GreenWorld Landscaping.",
+    url: PAGE_URL,
+    images: [
+      {
+        url: "/images/WhatsApp Image 2026-05-03 at 6.54.33 PM.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Happy GreenWorld Landscaping clients enjoying their transformed garden",
+      },
+    ],
+  },
+  twitter: {
+    title: "Client Reviews & Testimonials | GreenWorld Landscaping",
+    description:
+      "Read genuine reviews from homeowners and businesses who have transformed their outdoor spaces with GreenWorld Landscaping.",
+    images: ["/images/WhatsApp Image 2026-05-03 at 6.54.33 PM.jpeg"],
+  },
 };
 
 // ─── Types ────────────────────────────────────────────────────────────────────

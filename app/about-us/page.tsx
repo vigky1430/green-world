@@ -1,9 +1,43 @@
 import type { Metadata } from "next";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
+const PAGE_URL = "https://www.greenworld.com.sg/about-us";
+
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "Learn more about Green World Landscaping, our mission, vision, and commitment to sustainable landscapes.",
+  title: "About GreenWorld Landscaping | Sustainable Landscaping Company",
+  description:
+    "Learn about GreenWorld Landscaping — our mission to transform landscapes into natural paradises, our vision for a greener future, and our commitment to eco-friendly, sustainable outdoor spaces.",
+  keywords: [
+    "about GreenWorld Landscaping",
+    "sustainable landscaping company Singapore",
+    "eco-friendly landscaping",
+    "landscape architects",
+    "green world landscaping team",
+    "landscaping company",
+  ],
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  openGraph: {
+    title: "About GreenWorld Landscaping | Sustainable Landscaping Company",
+    description:
+      "Learn about GreenWorld Landscaping — our mission to transform landscapes into natural paradises and our commitment to a greener, eco-friendly future.",
+    url: PAGE_URL,
+    images: [
+      {
+        url: "/images/WhatsApp Image 2026-05-03 at 6.48.51 PM.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "GreenWorld Landscaping team working on a sustainable garden project",
+      },
+    ],
+  },
+  twitter: {
+    title: "About GreenWorld Landscaping | Sustainable Landscaping Company",
+    description:
+      "Learn about GreenWorld Landscaping — our mission to transform landscapes into natural paradises and our commitment to eco-friendly, sustainable outdoor spaces.",
+    images: ["/images/WhatsApp Image 2026-05-03 at 6.48.51 PM.jpeg"],
+  },
 };
 
 export default function AboutUsPage() {

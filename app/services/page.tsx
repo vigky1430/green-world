@@ -2,9 +2,46 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ServicesGallery } from "./ServicesList";
 
+const PAGE_URL = "https://www.greenworld.com.sg/services";
+
 export const metadata: Metadata = {
-  title: "Our Services | Green World Landscaping",
-  description: "Comprehensive suite of landscaping solutions tailored for the modern environment.",
+  title: "Landscaping Services in Singapore | Garden Design, Hydroculture & More",
+  description:
+    "Explore GreenWorld Landscaping's full range of services: landscape design & build, garden maintenance, hydroculture, fresh floral displays, tree planting, green wall installation, and artificial turf in Singapore.",
+  keywords: [
+    "landscaping services Singapore",
+    "landscape design and build",
+    "hydroculture service",
+    "fresh floral display",
+    "landscape maintenance",
+    "tree planting",
+    "green wall installation",
+    "artificial turf",
+    "outdoor garden design",
+  ],
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  openGraph: {
+    title: "Landscaping Services in Singapore | GreenWorld Landscaping",
+    description:
+      "Full-service landscaping in Singapore: design, maintenance, hydroculture, floral displays, tree planting, green walls, and artificial turf.",
+    url: PAGE_URL,
+    images: [
+      {
+        url: "/images/hydro-culture/hydro-culture-1.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Professional landscaping services by GreenWorld Landscaping Singapore",
+      },
+    ],
+  },
+  twitter: {
+    title: "Landscaping Services in Singapore | GreenWorld Landscaping",
+    description:
+      "Full-service landscaping in Singapore: design, maintenance, hydroculture, floral displays, tree planting, green walls, and artificial turf.",
+    images: ["/images/hydro-culture/hydro-culture-1.jpeg"],
+  },
 };
 
 export default function ServicesPage() {
