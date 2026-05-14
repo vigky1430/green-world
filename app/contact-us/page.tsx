@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "/images/home-hero-bg.webp",
+        url: "https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg",
         width: 1200,
         height: 630,
         alt: "Contact GreenWorld Landscaping for a free garden consultation",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Contact GreenWorld Landscaping | Get a Free Quote",
     description:
       "Get a free landscaping consultation and quote. Call +65 9243 4946 or visit us at 10 Admiralty Street, Singapore 757695.",
-    images: ["/images/home-hero-bg.webp"],
+    images: ["https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg"],
   },
 };
 

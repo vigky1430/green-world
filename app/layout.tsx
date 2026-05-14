@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Transform your outdoor space with GreenWorld Landscaping. Expert garden design, hydroculture, floral displays, and landscape maintenance in Singapore.",
     images: [
       {
-        url: "/images/home-hero-bg.webp",
+        url: "https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg",
         width: 1200,
         height: 630,
         alt: "GreenWorld Landscaping – Premium Landscaping in Singapore",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "GreenWorld Landscaping – Premium Landscaping in Singapore",
     description:
       "Transform your outdoor space with GreenWorld Landscaping. Expert garden design, hydroculture, floral displays, and landscape maintenance in Singapore.",
-    images: ["/images/home-hero-bg.webp"],
+    images: ["https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg"],
   },
   alternates: {
     canonical: BASE_URL,

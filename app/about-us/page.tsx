@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "/images/WhatsApp Image 2026-05-03 at 6.48.51 PM.jpeg",
+        url: "https://www.greenworld.com.sg/images/WhatsApp%20Image%202026-05-03%20at%206.48.51%20PM.jpeg",
         width: 1200,
         height: 630,
         alt: "GreenWorld Landscaping team working on a sustainable garden project",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "About GreenWorld Landscaping | Sustainable Landscaping Company",
     description:
       "Learn about GreenWorld Landscaping — our mission to transform landscapes into natural paradises and our commitment to eco-friendly, sustainable outdoor spaces.",
-    images: ["/images/WhatsApp Image 2026-05-03 at 6.48.51 PM.jpeg"],
+    images: ["https://www.greenworld.com.sg/images/WhatsApp%20Image%202026-05-03%20at%206.48.51%20PM.jpeg"],
   },
 };
 

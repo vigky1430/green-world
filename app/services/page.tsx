@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "/images/hydro-culture/hydro-culture-1.jpeg",
+        url: "https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg",
         width: 1200,
         height: 630,
         alt: "Professional landscaping services by GreenWorld Landscaping Singapore",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Landscaping Services in Singapore | GreenWorld Landscaping",
     description:
       "Full-service landscaping in Singapore: design, maintenance, hydroculture, floral displays, tree planting, green walls, and artificial turf.",
-    images: ["/images/hydro-culture/hydro-culture-1.jpeg"],
+    images: ["https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-1.jpeg"],
   },
 };
 

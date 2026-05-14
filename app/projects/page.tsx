@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     images: [
       {
-        url: "/images/hydro-culture/hydro-culture-4.jpeg",
+        url: "https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-4.jpeg",
         width: 1200,
         height: 630,
         alt: "GreenWorld Landscaping project portfolio – architectural garden designs",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Our Projects & Portfolio | GreenWorld Landscaping",
     description:
       "Browse GreenWorld Landscaping's portfolio — architectural gardens, hydroculture installations, and floral displays.",
-    images: ["/images/hydro-culture/hydro-culture-4.jpeg"],
+    images: ["https://www.greenworld.com.sg/images/hydro-culture/hydro-culture-4.jpeg"],
   },
 };
 
